@@ -3,9 +3,9 @@
 ------------
 
 
-**Soy José Antonio Alatorre Chávez y tengo 29 años de edad.
+Soy José Antonio Alatorre Chávez y tengo 29 años de edad.
 Este proyecto es mi portafolio donde muestro algunos de los programas que e realizado.
-**
+
 
 
 [![PROGRAMACION](https://www.oowlish.com/wp-content/uploads/2018/03/frontend.png "PROGRAMACION")](http://https://www.oowlish.com/2019/05/20/front-end-designer/ "PROGRAMACION")
