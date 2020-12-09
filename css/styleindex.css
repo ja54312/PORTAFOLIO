@@ -1,3 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.header{
+    background-color:#1B193E;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    text-align: end;
+    color: white;
+    margin: 0;
+}
+.nav li{
+    display: inline-block;
+    font-size: 1.5rem;  
+    margin: 15px;
+}
+.nav a{
+    color:white;
+    text-decoration: none;
+}
+.Logo{
+    font-size:2rem;
+    margin:0;
+    justify-content: center;
+    color:white;
+    
+}
+.Logo img{
+    vertical-align: middle;
+    padding-left:1rem ;
+}
 .footer{
     background-color:blue;
     height: 50px;
@@ -6,3 +46,4 @@
     display: flex;
     justify-content: flex-end;
 }
+
