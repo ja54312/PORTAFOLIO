@@ -1,1 +1,8 @@
-//aqui crearemos los estilos
+.footer{
+    background-color:blue;
+    height: 50px;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
