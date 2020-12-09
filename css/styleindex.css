@@ -39,11 +39,12 @@ html{
     padding-left:1rem ;
 }
 .footer{
-    background-color:blue;
+    background-color:#1B193E;
     height: 50px;
     font-size: 2rem;
     color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
+    align-items: center;
 }
 
