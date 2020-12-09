@@ -5,6 +5,7 @@
 }
 html{
     font-size: 62.5%;
+    background-color: purple;
 }
 .header{
     background-color:#1B193E;
@@ -47,4 +48,92 @@ html{
     justify-content:flex-end;
     align-items: center;
 }
-
+.main{
+}
+.Hero{
+    display: flex;
+    height: 300px;
+    background-image:url(../images/YO.jpg) ;
+    background-size: 500px 300px;
+    background-repeat:no-repeat;
+    background-position-x:right ;
+    background-color:cadetblue;
+    margin: 5rem;
+    margin-top:0;
+    margin-bottom: 0;
+    align-items: center;
+    border-radius:3px;
+}
+.Hero h1{
+    line-height: 1.5;
+    font-size: 35px;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    padding-left: 5rem ;
+}
+h1 strong{
+    color:blue;
+}
+.Secciones{
+    display:flex;
+    flex-direction: column;
+}
+.about_me{
+    background-color: #fafafa;
+    padding: 0;
+    margin: 5rem;
+    margin-top:0.7rem;
+    margin-bottom:0;
+}
+.me{
+    border:1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;  
+    display: flex; 
+}
+.me-details{
+    width: 500px;
+    
+}
+.Portafolio{
+    background-color: #fafafa;
+    padding: 0;
+    margin: 5rem;
+    margin-top:0.7rem;
+    margin-bottom: 0;
+}
+.Porta{
+    border:1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;  
+    display: flex; 
+}
+.Porta-details{
+    width: 500px;
+}
+.Contacto{
+    background-color: #fafafa;
+    padding: 0;
+    margin: 5rem;
+    margin-top:0.7rem;
+    margin-bottom: 0;
+}
+.Contact{
+    border:1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;  
+    display: flex; 
+}
+.Contact-details{
+    width: 500px;
+}
