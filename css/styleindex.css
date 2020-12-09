@@ -5,7 +5,9 @@
 }
 html{
     font-size: 62.5%;
-    background-color: rgb(136, 71, 170);
+    background-image:url(../images/fondo.jpg);
+    background-size: contain;
+    object-fit: cover;
 }
 .header{
     background-color:#1B193E;
@@ -131,21 +133,52 @@ h1 strong{
     width: 500px;
 }
 .Contacto{
-    background-color: #fafafa;
+    background-color:rgb(16, 15, 117);
     padding: 0;
     margin: 5rem;
     margin-top:0.7rem;
     margin-bottom: 0;
 }
+.Contacto h2{
+    color: white;
+    font-size: 5rem;
+    padding-left:2rem ;
+    padding-top: 1rem;
+}
 .Contact{
-    border:1px solid gray;
-    border-radius: 10px;
     margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background-color: white;  
+    background-color:inherit;  
     display: flex; 
+    align-items: center;
+    justify-content:space-around;
 }
-.Contact-details{
-    width: 500px;
+.Contact-text{
+    color: white;
+    font-size: 3rem;
 }
+.social{
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.link-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+  }
+.link-social.twitter {
+    background-image: url(../images/twitter.svg);
+  }
+  .link-social.facebook {
+    background-image: url(../images/facebook.svg);
+  }
+  .link-social.github {
+    background-image: url(../images/github.svg);
+  }
+  .link-social.linkedin{
+    background-image: url(../images/instagram.svg);
+  }
