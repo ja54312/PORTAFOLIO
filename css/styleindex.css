@@ -7,35 +7,36 @@ html{
     font-size: 62.5%;
 }
 .header{
-    background-color: pink;
+    background-color:#1B193E;
     height: 50px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav{
     text-align: end;
     color: white;
-    background-color:red;
-    height: 50px;
-    width:75%;
     margin: 0;
 }
 .nav li{
     display: inline-block;
     font-size: 1.5rem;  
+    margin: 15px;
+}
+.nav a{
+    color:white;
     text-decoration: none;
-   
 }
 .Logo{
-    height: 50px;
-    width: 25%;
-    background-image: url(../images/trifuerza.jpg);
-    background-size: 80px 25px;
+    background-image:url(../images/Trifuerza_ALBW.png) ;
+    background-size:  90px 50px;
     background-repeat: no-repeat;
     background-position-x:left;
-    background-color: green;
     font-size:2rem;
-    text-align: right;
-    margin: 0;
+    margin:0;
+    justify-content: center;
+    padding-top:1.1rem ;
+    padding-left:10rem ;
+    color:white;
 }
 
