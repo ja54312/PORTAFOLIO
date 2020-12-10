@@ -34,12 +34,14 @@ html{
     font-size:2rem;
     margin:0;
     justify-content: center;
-    color:white;
-    
+    color:white;  
 }
 .Logo img{
     vertical-align: middle;
-    padding-left:1rem ;
+    margin:0;
+    width: 70px;
+    height: 50px;
+    
 }
 .footer{
     background-color:#1B193E;
@@ -64,7 +66,10 @@ html{
     justify-content: space-between;
     align-items: center;
     height: 300px;
-    background-color:cadetblue;
+    background: -moz-linear-gradient(top,  rgb(98,125,77) 36%, rgb(31,59,8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(98,125,77) 36%,rgb(31,59,8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(98,125,77) 36%,rgb(31,59,8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */;
     margin: 5rem;
     margin-top:0;
     margin-bottom: 0;
@@ -94,11 +99,16 @@ h1 strong{
     flex-direction: column;
 }
 .about_me{
-    background-color: #fafafa;
+    background-color:rgb(23, 120, 177);
     padding: 0;
     margin: 5rem;
     margin-top:0.7rem;
-    margin-bottom:0;
+    margin-bottom:0; 
+}
+.about-me-text{
+    font-size:3rem;
+    padding: 1rem;
+    color:white;
 }
 .me{
     border:1px solid gray;
@@ -106,31 +116,59 @@ h1 strong{
     margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background-color: white;  
+    background-color:rgb(24, 109, 158);  
     display: flex; 
 }
-.me-details{
-    width: 500px;
-    
+.me-details{     
+}
+.me-text{
+    font-size: 2rem;
+    color:white;
+}
+.me-text strong{
+    font-style: italic;
+    color:blue;
 }
 .Portafolio{
-    background-color: #fafafa;
+    background-color:rgb(23, 120, 177);
     padding: 0;
     margin: 5rem;
     margin-top:0.7rem;
-    margin-bottom: 0;
+    margin-bottom:0; 
 }
-.Porta{
+.Proyectos{
     border:1px solid gray;
     border-radius: 10px;
     margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background-color: white;  
-    display: flex; 
+    background-color:rgb(24, 109, 158);  
+    display: flex;
 }
-.Porta-details{
-    width: 500px;
+.Porta-text{
+    font-size:3rem;
+    padding: 1rem;
+    color:white;
+}
+.Proyect{
+    border:gray solid 1px;
+    border-radius:5px;
+    margin: 0.5rem;
+}
+.Proyect-tittle{
+    padding: 1rem;
+}
+.Fecha{
+    padding: 1rem;
+}
+.Proyect-link{
+    padding: 1rem;
+}
+.Proyect-img{
+    padding: 1rem;
+}
+.Proyect-text{
+    padding: 1rem;
 }
 .Contacto{
     background-color:rgb(16, 15, 117);
