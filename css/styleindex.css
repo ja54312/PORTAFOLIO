@@ -5,7 +5,7 @@
 }
 html{
     font-size: 62.5%;
-    background-image:url(../images/fondo.jpg);
+    background-image:url(../images/blanco.jpeg);
     background-size: contain;
     object-fit: cover;
 }
@@ -14,6 +14,7 @@ html{
     height: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav{
@@ -25,10 +26,12 @@ html{
     display: inline-block;
     font-size: 1.5rem;  
     margin: 15px;
+    flex-wrap: wrap;
 }
 .nav a{
     color:white;
     text-decoration: none;
+    
 }
 .Logo{
     font-size:2rem;
@@ -220,3 +223,33 @@ h1 strong{
   .link-social.linkedin{
     background-image: url(../images/instagram.svg);
   }
+  @media (max-width:1024px){
+    
+  }
+  @media (max-width:767px){
+    .header{
+        display: block;
+        height: auto;
+        text-align:center;
+    }
+    .header ul{
+        display:block;
+      }
+      .header ul li{
+        height: 50px;
+        display:flex;
+        justify-content: center;
+      }
+      .header a{
+        justify-content: center;
+      }
+      .header .Logo{
+        text-align: center;
+      }
+  }
+   @media (max-width:480px){
+      
+  }
+  @media (max-width:320px){
+      
+}
