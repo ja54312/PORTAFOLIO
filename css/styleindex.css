@@ -246,6 +246,9 @@ h1 strong{
       .header .Logo{
         text-align: center;
       }
+      .footer_text{
+          margin: auto;
+      }
   }
    @media (max-width:480px){
       
