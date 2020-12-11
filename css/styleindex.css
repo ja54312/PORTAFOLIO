@@ -107,9 +107,10 @@ h1 strong{
     margin: 5rem;
     margin-top:0.7rem;
     margin-bottom:0; 
+    font-size: 3rem;
 }
 .about-me-text{
-    font-size:3rem;
+    font-size:1.2em;
     padding: 1rem;
     color:white;
 }
@@ -122,10 +123,8 @@ h1 strong{
     background-color:rgb(24, 109, 158);  
     display: flex; 
 }
-.me-details{     
-}
 .me-text{
-    font-size: 2rem;
+    font-size: 0.8em;
     color:white;
 }
 .me-text strong{
@@ -138,6 +137,7 @@ h1 strong{
     margin: 5rem;
     margin-top:0.7rem;
     margin-bottom:0; 
+    border-radius: 1rem;
 }
 .Proyectos{
     border:1px solid gray;
@@ -254,6 +254,24 @@ h1 strong{
         font-size:4rem; 
         margin: 0;
       }
+      .Portafolio{
+          margin:0;
+          border-radius: 0;
+      }
+      .Proyectos{
+        flex-wrap: wrap;
+    }
+    .about_me{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .Hero{
+        margin:0;
+        border-radius: 0;
+    }
+    .nav li{
+        margin: 0;
+    }
 }    
    @media (max-width:480px){
     .social{
@@ -266,6 +284,22 @@ h1 strong{
     .Contact-text{
         padding-bottom:2rem ;
     }
+    .about_me{
+        font-size: 1.5rem;
+    }
+    .Hero{
+        display:block;
+    }
+    .Hero-title{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .Img-foto{
+        height: 150px;
+        padding-left:18.5rem ;
+    }
+    
+    
   }
   @media (max-width:320px){
       .Contacto{
@@ -276,4 +310,17 @@ h1 strong{
         height: 35px;
         background-size: 35px 35px;
       }
+      .about_me{
+        font-size: 1rem;
+    }
+    .Hero{
+        height: auto;
+    }
+    .Hero h1{
+        font-size: 2rem;
+    }
+    .Img-foto{
+        height: 150px;
+        padding-left:10.5rem ;
+    }
 }
