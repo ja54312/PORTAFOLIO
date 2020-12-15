@@ -2,22 +2,25 @@
 <html lang="es">
     <head>
         <title>JA54312</title>
-        <link rel="icon" type="image/png" href="../JA54312.github.io/images/Trifuerza_ALBW.png">
+        <link rel="icon" type="image/png" href="./images/Trifuerza_ALBW.png">
         <meta charset="UTF-8">
         <meta name="description" content="Soy José Antonio Alatorre Chávez
          contando sobre mi y mostrando mi Portafolio">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styleindex.css">
     </head>
     <body>
-     <header class="header">
+        <i class="icon-menu burger-button" id="burger-menu"></i>
+     <header class="header" id="Header">
             <div class="Logo">
                   <p><img src="./images/Trifuerza_ALBW.png"alt="Logo"><strong> JA54312</strong></p>
               </div>
           <nav class="nav">
                   <ul>
-                      <li><a href="#Hero">HOME</a></li>
+                      <li><a href="#Header">HOME</a></li>
                       <li><a href="#about_me">SOBRE MI</a></li>
                       <li><a href="#Portafolio">PORTAFOLIO</a></li>
                       <li><a href="#Contacto">CONTACTO</a></li>
@@ -109,8 +112,29 @@
     </div>
      </main> 
      <footer class="footer">
-         <p class="footer_text">Created with love by <a href="https://twitter.com/JA54312" target="_blank" alt="enlace a twitter de @JA54312">@JA54312</a></p>
+         <p class="footer_text">Created with love ❤ by <a href="https://twitter.com/JA54312" target="_blank" alt="enlace a twitter de @JA54312">@JA54312</a></p>
      </footer> 
+     <script>
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
+        const menu = document.querySelector('.nav');
+        const burgerButton = document.querySelector('#burger-menu');
+  
+        ipad.addListener(validation);
+        validation(ipad);
+          function validation(event) {
+              if (event.matches) {
+                    console.log('true');
+                  burgerButton.addEventListener('click', hideShow);
+                  } else {
+                    console.log('false');
+                  burgerButton.removeEventListener('click', hideShow);
+          }
+  }
+  
+  function hideShow() {
+      menu.classList.contains('is-active') ? menu.classList.remove('is-active') : menu.classList.add('is-active');
+  }
+      </script>
     </body>
     
 </html>
