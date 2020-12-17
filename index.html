@@ -10,7 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styleindex.css">
+        <link rel="stylesheet" href="./css/desktop.css">
+        <link rel="stylesheet" href="./css/tablet.css">
+        <link rel="stylesheet" href="./css/landscape.css">
+        <link rel="stylesheet" href="./css/mobile.css">
     </head>
     <body>
         <i class="icon-menu burger-button" id="burger-menu"></i>
@@ -114,27 +117,7 @@
      <footer class="footer">
          <p class="footer_text">Created with love ❤ by <a href="https://twitter.com/JA54312" target="_blank" alt="enlace a twitter de @JA54312">@JA54312</a></p>
      </footer> 
-     <script>
-        const ipad = window.matchMedia('screen and (max-width: 767px)');
-        const menu = document.querySelector('.nav');
-        const burgerButton = document.querySelector('#burger-menu');
-  
-        ipad.addListener(validation);
-        validation(ipad);
-          function validation(event) {
-              if (event.matches) {
-                    console.log('true');
-                  burgerButton.addEventListener('click', hideShow);
-                  } else {
-                    console.log('false');
-                  burgerButton.removeEventListener('click', hideShow);
-          }
-  }
-  
-  function hideShow() {
-      menu.classList.contains('is-active') ? menu.classList.remove('is-active') : menu.classList.add('is-active');
-  }
-      </script>
+     <script src="./js/portafolio.js"></script>
     </body>
     
 </html>

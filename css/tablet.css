@@ -1,0 +1,75 @@
+@media (max-width:767px){
+    .header{
+        display: block;
+        height: auto;
+        text-align:center;
+    }
+    .header ul{
+        display:block;
+      }
+      .header ul li{
+        height: 50px;
+        display:flex;
+        justify-content: center;
+      }
+      .header a{
+        justify-content: center;
+      }
+      .header .Logo{
+        text-align: center;
+      }
+      .footer_text{
+          margin: auto;
+      }
+      .Contacto{
+        font-size:4rem; 
+        margin: 0;
+      }
+      .Hero h1{
+          font-size: 3rem;
+      }
+      .Portafolio{
+          margin:0;
+          border-radius: 0;
+          font-size: 2.5rem;
+      }
+      .Proyectos{
+        flex-wrap: wrap;
+    }
+    .about_me{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .Hero{
+        margin:0;
+        border-radius: 0;
+    }
+    .nav li{
+        margin: 0;
+    }
+    .link-social {
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
+      }
+      .burger-button{
+        display: block;
+      }
+      .nav {
+        position: fixed;
+        background-color:rgb(27, 25, 62,.8);
+        z-index: 3;
+        top: 0;
+        left:-100vw; /* Para que el menu se oculte a la izquierda y se cree el efecto al hacer click*/
+        width: 100vw;
+        bottom: 0;/* height: 100vw; */ /*A partir de aqui para centrar*/
+        display: flex;
+        align-items: center;
+        justify-content: center; /* centrar hasta aqui */
+        transition: .3s; /* Para crear efecto de transición */
+    }
+    .nav.is-active {
+        left: 0;
+    }
+}    
+  

@@ -1,0 +1,29 @@
+@media (max-width:480px){
+    .social{
+        display: block;
+    }
+    .Contact{
+        flex-wrap: wrap;
+        margin-bottom: auto;
+    }
+    .Contact-text{
+        padding-bottom:2rem ;
+    }
+    .about_me{
+        font-size: 1.5rem;
+    }
+    .Hero{
+        display:block;
+    }
+    .Hero h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .Img-foto{
+        height: 150px;
+        padding-left:18.5rem ;
+    }
+    .Portafolio{
+        font-size:2rem;
+    }  
+  }
