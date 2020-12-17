@@ -14,14 +14,16 @@
     }
     .Hero{
         display:block;
+        height: 250px;
     }
     .Hero h1{
         font-size: 2rem;
-        text-align: center;
+        letter-spacing:0;
     }
     .Img-foto{
         height: 150px;
-        padding-left:18.5rem ;
+        padding-left:12.5rem ;
+        padding-top:2rem ;
     }
     .Portafolio{
         font-size:2rem;
