@@ -204,6 +204,11 @@ h1 strong{
 .Proyect-img{
     padding: 1rem;
 }
+.img_portafolio{
+    width:100%;
+    height:auto;
+
+}
 .Proyect-text{
     padding: 1rem;
     font-size: 0.8em;
