@@ -63,9 +63,12 @@ html{
     text-decoration: none;
     
 }
+nav a:hover{
+    color:rgb(23, 153, 234);
+  }
 .Logo{
     font-size:2rem;
-    margin:0;
+    margin:10px;
     justify-content: center;
     color:white;  
 }
@@ -76,22 +79,32 @@ html{
     height: 50px;
     
 }
+/* Footer*/
 .footer{
     background-color:#1B193E;
     height: 50px;
     font-size: 2rem;
     color: white;
     display: flex;
-    justify-content:flex-end;
+    justify-content:space-between;
     align-items: center;
 }
 .footer_text{
-    margin-right: 15px;
+    
 }
 .footer_text a{
     text-decoration: none;
     color: white;
 }
+.version{
+    color: white;
+    margin-left:1rem;
+}
+.option_contact a{
+    color: white;
+    margin-right: 1rem;
+}
+/*Main*/
 .main{
     font-family: 'Open Sans', sans-serif;
 }

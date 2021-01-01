@@ -18,6 +18,13 @@
       .header .Logo{
         text-align: center;
       }
+      /*Footer-tablet*/
+      .version{
+        display:none;
+      }
+      .option_contact{
+        display: none;
+      }
       .footer_text{
           margin: auto;
       }
