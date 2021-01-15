@@ -1,3 +1,4 @@
+/*GLOBAL*/
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ html{
     background-size: contain;
     object-fit: cover;
 }
+/*ICOMOON*/
 @font-face {
     font-family: 'icomoon';
     src:  url(../icomoon/fonts/icomoon.eot?rjo76b);
@@ -39,6 +41,7 @@ html{
   .icon-menu:before {
     content: "\e900";
   }
+  /*HEADER*/
 .header{
     background-color:rgb(27, 25, 62);
     height: 50px;
@@ -219,7 +222,7 @@ h1 strong{
 }
 .img_portafolio{
     width:100%;
-    height:auto;
+    height:50rem;
 
 }
 .Proyect-text{
@@ -288,8 +291,9 @@ h1 strong{
     position: fixed;
     z-index: 4;
     left: 5px;
-    top: 5px;
+    top: 15px;
     color: white;
+    font-size:15px;
   }   
   @media (max-width:1024px){
 
