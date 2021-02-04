@@ -204,6 +204,7 @@ h1 strong{
     border:gray solid 1px;
     border-radius:5px;
     margin: 0.5rem;
+    width: fit-content;
 }
 .Proyect-tittle{
     padding: 1rem;
