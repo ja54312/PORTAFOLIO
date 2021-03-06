@@ -1,3 +1,7 @@
+*{
+    font-family: Roboto;
+}
+/* HEADER */
 .Logo{
     height: 70px;
     width: 70px;
@@ -10,4 +14,25 @@
 }
 .text-navbar{
     color:var(--text-navbar-color);
+}
+/*FOOTER*/
+footer{
+    background-color:var(--footer-color);
+}
+.text-footer{
+    color: var(--text-footer-color);
+}
+/*HERO*/
+.Hero{
+    padding:1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+/*PRPYECTOS DESTACADOS*/
+.Proyectos-Destacados{
+    margin-top:10px;  
+}
+.card{
+    padding:1rem;
+    margin:2rem ;
 }
