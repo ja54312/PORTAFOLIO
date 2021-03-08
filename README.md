@@ -4,7 +4,7 @@
 
 
 Soy José Antonio Alatorre Chávez y tengo 29 años de edad.
-Este proyecto es mi portafolio donde muestro algunos de los programas que e realizado.
+Este proyecto es mi portafolio donde muestro algunos de las paginas Web que eh realizado.
 
 
 

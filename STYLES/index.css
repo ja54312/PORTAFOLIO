@@ -28,11 +28,31 @@ footer{
     font-size: 3rem;
     text-align: center;
 }
-/*PRPYECTOS DESTACADOS*/
-.Proyectos-Destacados{
-    margin-top:10px;  
+/*PROYECTOS DESTACADOS*/
+.text-proyectos-destacados{
+    padding-left:2rem ;
 }
 .card{
     padding:1rem;
     margin:2rem ;
+}
+/*Mas Proyectos*/
+.text-mas-proyectos{
+    text-align:end;
+    padding-right: 2rem;
+}
+/*Sobre Mi*/
+.text-sobre-mi{
+    padding-left: 2rem;
+}
+.container-info-aboutme{
+    border: 1px solid black;
+}
+.img-aboutme{
+    height: 50px;
+    width:50px;
+}
+/*Contacto*/
+.text-contact{
+    text-align:center;
 }
