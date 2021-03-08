@@ -27,4 +27,4 @@ Trabajemos juntos,creemos algo nuevo.
 
 Bienvenido el feedback.
 
-#ESTA ES LA VERSION 1.0#
+#ESTA ES LA VERSION 2.0#
