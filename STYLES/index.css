@@ -21,6 +21,8 @@ footer{
 }
 .text-footer{
     color: var(--text-footer-color);
+    padding-left: 10px;
+    margin:0;
 }
 /*HERO*/
 .Hero{
@@ -45,14 +47,22 @@ footer{
 .text-sobre-mi{
     padding-left: 2rem;
 }
-.container-info-aboutme{
+/*.container-info-aboutme{
     border: 1px solid black;
-}
+}*/
 .img-aboutme{
     height: 50px;
     width:50px;
 }
 /*Contacto*/
+.contacto{
+    margin: auto;
+}
 .text-contact{
     text-align:center;
+}
+.img-contact{
+    height: 50px;
+    width: 50px;
+    color: black;
 }
