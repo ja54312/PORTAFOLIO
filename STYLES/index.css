@@ -19,6 +19,19 @@
 footer{
     background-color:var(--footer-color);
 }
+.footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.text-footer a{
+    text-decoration: none;
+    color: white;
+}
+.mail-contact img{
+    height: 50px;
+    width:50px;
+}
 .text-footer{
     color: var(--text-footer-color);
     padding-left: 10px;
