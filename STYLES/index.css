@@ -51,6 +51,9 @@ footer{
     padding:1rem;
     margin:2rem ;
 }
+.card-img-top{
+    max-height: 150px;
+}
 /*Mas Proyectos*/
 .text-mas-proyectos{
     text-align:end;
