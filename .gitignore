@@ -1,5 +1,3 @@
-images/trifuerza.jpg
-images/rojo.jpeg
-images/fondo.jpg
-images/instagram.svg
-Notas.txt
+node_modules
+text.txt
+.cache
