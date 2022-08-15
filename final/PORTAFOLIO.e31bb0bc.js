@@ -29566,7 +29566,9 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/ASSETS/Trifuerza_ALBW.png":[function(require,module,exports) {
+module.exports = "/Trifuerza_ALBW.0e64e718.png";
+},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -29633,7 +29635,150 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/REACT/components/FOOTER/footer.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/REACT/components/HEADER/header.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/HEADER/header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Trifuerza_ALBW = _interopRequireDefault(require("../../../ASSETS/Trifuerza_ALBW.png"));
+
+require("./header.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", {
+    id: "header",
+    className: "header"
+  }, /*#__PURE__*/_react.default.createElement("nav", {
+    className: "header-navbar"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "conatiner-fluid"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    className: "navbar-brand",
+    href: "#"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _Trifuerza_ALBW.default,
+    alt: "trifuerza",
+    className: "Logo"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "name_logo"
+  }, "JA54312"))))));
+};
+
+var _default = Header;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../../../ASSETS/Trifuerza_ALBW.png":"src/ASSETS/Trifuerza_ALBW.png","./header.css":"src/REACT/components/HEADER/header.css"}],"src/REACT/components/HERO/hero.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/HERO/hero.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./hero.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Hero = function Hero() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
+    className: "container-hero"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Soy un hero")));
+};
+
+var _default = Hero;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./hero.css":"src/REACT/components/HERO/hero.css"}],"src/REACT/components/CONTACTO/contacto.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/CONTACTO/contacto.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./contacto.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Contacto = function Contacto() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
+    className: "container-contacto"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "texto-contacto"
+  }, "Creemos algo juntos ..."), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-divs"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-contacts"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-contact"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://twitter.com/home",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "https://www.vectorlogo.zone/logos/twitter/twitter-official.svg",
+    alt: "Logo de twitter",
+    className: "img-contact"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-contact"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://www.facebook.com/iJa54312",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "https://www.vectorlogo.zone/logos/facebook/facebook-tile.svg",
+    alt: "logo de facebook",
+    className: "img-contact"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-contact"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://github.com/ja54312",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "https://www.vectorlogo.zone/logos/github/github-icon.svg",
+    alt: "logo de github",
+    className: "img-contact"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-contact"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://www.linkedin.com/in/ja54312/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg",
+    alt: "logo de linkedin",
+    className: "img-contact"
+  })))))));
+};
+
+var _default = Contacto;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./contacto.css":"src/REACT/components/CONTACTO/contacto.css"}],"src/REACT/components/FOOTER/footer.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29677,52 +29822,7 @@ var Footer = function Footer() {
 
 var _default = Footer;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./footer.css":"src/REACT/components/FOOTER/footer.css"}],"src/ASSETS/Trifuerza_ALBW.png":[function(require,module,exports) {
-module.exports = "/Trifuerza_ALBW.0e64e718.png";
-},{}],"src/REACT/components/HEADER/header.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/HEADER/header.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _Trifuerza_ALBW = _interopRequireDefault(require("../../../ASSETS/Trifuerza_ALBW.png"));
-
-require("./header.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Header = function Header() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", {
-    id: "header",
-    className: "header"
-  }, /*#__PURE__*/_react.default.createElement("nav", {
-    className: "header-navbar"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "conatiner-fluid"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    className: "navbar-brand",
-    href: "#"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _Trifuerza_ALBW.default,
-    alt: "trifuerza",
-    className: "Logo"
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    className: "name_logo"
-  }, "JA54312"))))));
-};
-
-var _default = Header;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../../../ASSETS/Trifuerza_ALBW.png":"src/ASSETS/Trifuerza_ALBW.png","./header.css":"src/REACT/components/HEADER/header.css"}],"src/REACT/components/PRUEBA/prueba.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./footer.css":"src/REACT/components/FOOTER/footer.css"}],"src/REACT/components/PRUEBA/prueba.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29752,22 +29852,26 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _footer = _interopRequireDefault(require("./src/REACT/components/FOOTER/footer"));
-
 var _header = _interopRequireDefault(require("./src/REACT/components/HEADER/header"));
+
+var _hero = _interopRequireDefault(require("./src/REACT/components/HERO/hero"));
+
+var _contacto = _interopRequireDefault(require("./src/REACT/components/CONTACTO/contacto"));
+
+var _footer = _interopRequireDefault(require("./src/REACT/components/FOOTER/footer"));
 
 var _prueba = _interopRequireDefault(require("./src/REACT/components/PRUEBA/prueba"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_prueba.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_hero.default, null), /*#__PURE__*/_react.default.createElement(_contacto.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
 
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/PRUEBA/prueba":"src/REACT/components/PRUEBA/prueba.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/HERO/hero":"src/REACT/components/HERO/hero.js","./src/REACT/components/CONTACTO/contacto":"src/REACT/components/CONTACTO/contacto.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js","./src/REACT/components/PRUEBA/prueba":"src/REACT/components/PRUEBA/prueba.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29795,7 +29899,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37095" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37401" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
