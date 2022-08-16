@@ -92,4 +92,23 @@
 .text-footer a {
     text-decoration: none;
     color: white;
+}.text-sobre-mi {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.container-info-aboutme{
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info-aboutme{
+    padding-left: 0.25rem;
+}
+.img-aboutme{
+    height: 50px;
+    width: 50px;
 }

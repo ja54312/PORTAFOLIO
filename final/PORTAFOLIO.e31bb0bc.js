@@ -29840,7 +29840,76 @@ var Prueba = function Prueba() {
 
 var _default = Prueba;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"src/REACT/components/SOBREMI/sobremi.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/ASSETS/front.svg":[function(require,module,exports) {
+module.exports = "/front.dd5bbdc8.svg";
+},{}],"src/ASSETS/podcast.svg":[function(require,module,exports) {
+module.exports = "/podcast.f319409f.svg";
+},{}],"src/ASSETS/gamer.svg":[function(require,module,exports) {
+module.exports = "/gamer.be90afbe.svg";
+},{}],"src/REACT/components/SOBREMI/sobremi.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./sobremi.css");
+
+var _front = _interopRequireDefault(require("../../../ASSETS/front.svg"));
+
+var _podcast = _interopRequireDefault(require("../../../ASSETS/podcast.svg"));
+
+var _gamer = _interopRequireDefault(require("../../../ASSETS/gamer.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SobreMi = function SobreMi() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
+    className: "SobreMi"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "text-sobre-mi"
+  }, "Sobre mi"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h4", {
+    className: "text-sobre-mi"
+  }, "Soy Jose Antonio tengo 31 a\xF1os,soy Ing.Aeronautico,estudio Ing en Energias Renovables y Me encanta el Desarrollo Web."), /*#__PURE__*/_react.default.createElement("h4", {
+    className: "text-sobre-mi"
+  }, "Tambi\xE9n Soy un Podcaster Amateur Y Gamer. Actualmente tengo conocimiento b\xE1sico de React y me encuentro mejorando mi conocimiento del mismo. Actualmente trabajo en una agencia de e-comerce como Desarrollador Front-end."), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-info-aboutme"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "info-aboutme"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _front.default,
+    alt: "FrontEnd",
+    className: "img-aboutme"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "info-aboutme"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://ja54312.github.io/lo-que-la-noche-nos-cuenta/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _podcast.default,
+    alt: "podcast",
+    className: "img-aboutme"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "info-aboutme"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _gamer.default,
+    alt: "gamer",
+    className: "img-aboutme"
+  }))), /*#__PURE__*/_react.default.createElement("br", null)));
+};
+
+var _default = SobreMi;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./sobremi.css":"src/REACT/components/SOBREMI/sobremi.css","../../../ASSETS/front.svg":"src/ASSETS/front.svg","../../../ASSETS/podcast.svg":"src/ASSETS/podcast.svg","../../../ASSETS/gamer.svg":"src/ASSETS/gamer.svg"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29862,16 +29931,18 @@ var _footer = _interopRequireDefault(require("./src/REACT/components/FOOTER/foot
 
 var _prueba = _interopRequireDefault(require("./src/REACT/components/PRUEBA/prueba"));
 
+var _sobremi = _interopRequireDefault(require("./src/REACT/components/SOBREMI/sobremi"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_hero.default, null), /*#__PURE__*/_react.default.createElement(_contacto.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_hero.default, null), /*#__PURE__*/_react.default.createElement(_sobremi.default, null), /*#__PURE__*/_react.default.createElement(_contacto.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
 
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/HERO/hero":"src/REACT/components/HERO/hero.js","./src/REACT/components/CONTACTO/contacto":"src/REACT/components/CONTACTO/contacto.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js","./src/REACT/components/PRUEBA/prueba":"src/REACT/components/PRUEBA/prueba.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/HERO/hero":"src/REACT/components/HERO/hero.js","./src/REACT/components/CONTACTO/contacto":"src/REACT/components/CONTACTO/contacto.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js","./src/REACT/components/PRUEBA/prueba":"src/REACT/components/PRUEBA/prueba.js","./src/REACT/components/SOBREMI/sobremi":"src/REACT/components/SOBREMI/sobremi.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29899,7 +29970,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37401" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35979" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

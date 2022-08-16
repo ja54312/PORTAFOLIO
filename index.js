@@ -5,6 +5,7 @@ import Hero from "./src/REACT/components/HERO/hero";
 import Contacto from "./src/REACT/components/CONTACTO/contacto";
 import Footer from "./src/REACT/components/FOOTER/footer";
 import Prueba from "./src/REACT/components/PRUEBA/prueba";
+import SobreMi from "./src/REACT/components/SOBREMI/sobremi";
 
 
 export default function App(){
@@ -12,6 +13,7 @@ export default function App(){
     <>
         <Header/>
         <Hero/>
+        <SobreMi/>
         <Contacto/>
         <Footer/>
     </>
