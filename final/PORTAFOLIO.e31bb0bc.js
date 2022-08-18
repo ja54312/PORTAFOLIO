@@ -29700,7 +29700,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Hero = function Hero() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
     className: "container-hero"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Soy un hero")));
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Front-End Developer con 2 a\xF1os de experiencia con JavaScript  y ReactJs . Actualmente me encuentro en b\xFAsqueda de nuevos desaf\xEDos que me permitan crecer profesionalmente y convertirme en Full Stack. En b\xFAsqueda de un trabajo remoto que me permita perfeccionar ReactJs.")));
 };
 
 var _default = Hero;
@@ -29970,7 +29970,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35979" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36487" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
