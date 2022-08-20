@@ -1,22 +1,34 @@
 import React from 'react'
 import Card from '../ELEMENTS/CARD/card'
-import IMG from '../../../ASSETS/SCREENSHOTS/SIMON_DICE_.png'
+import proyectosAux from './proyectosAux'
 import './proyectos.css'
 
 const Proyectos = () => {
+
+    //console.log(proyectosAux,"proyectos aux")
+    //console.log(proyectosAux[0],"proyectos aux")
     return(
         <>
-            <div className='container-proyectos'>
+            {proyectosAux && <div className='container-proyectos'>
                 <h2>PROYECTITOS</h2>
-                <Card 
-                    Img={IMG}
-                    AltImg={'imagen'} 
-                    Title={'SIMON DICE'}
-                    TextoCard={'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??'}
-                    Link={'https://ja54312.github.io/SIMON_DICE/'}
-                    ButtonText={'Ir a la web'}
-                />
-            </div>
+                <div className='container-cards'>
+                    {proyectosAux && proyectosAux.map((element,key) =>{
+                        return(
+                            <Card
+                                key={key}
+                                Img={element.Img}
+                                AltImg={element.AltImg} 
+                                Title={element.Title}
+                                Lenguaje={element.Lenguaje}
+                                TextoCard={element.TextoCard}
+                                Link={element.Link}
+                                ButtonText={element.ButtonText}
+                            />
+                        )
+                    }) 
+                    }
+                </div>
+            </div>}
         </>
     )
 

@@ -131,6 +131,12 @@
 }.container-proyectos{
     width: 100%;
     margin: 10px 25px;
+}
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }.text-sobre-mi {
     padding-left: 2rem;
     font-size: 1.5rem;

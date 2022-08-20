@@ -29760,6 +29760,7 @@ var Card = function Card(_ref) {
   var Img = _ref.Img,
       AltImg = _ref.AltImg,
       Title = _ref.Title,
+      Lenguaje = _ref.Lenguaje,
       TextoCard = _ref.TextoCard,
       Link = _ref.Link,
       ButtonText = _ref.ButtonText;
@@ -29772,7 +29773,7 @@ var Card = function Card(_ref) {
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "card-body"
   }, /*#__PURE__*/_react.default.createElement(_badge.default, {
-    lenguaje: "JS"
+    lenguaje: Lenguaje
   }), /*#__PURE__*/_react.default.createElement("h5", {
     className: "card-title"
   }, Title), /*#__PURE__*/_react.default.createElement("p", {
@@ -29787,9 +29788,46 @@ var Card = function Card(_ref) {
 
 var _default = Card;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../BADGE/badge":"src/REACT/components/ELEMENTS/BADGE/badge.js","./card.css":"src/REACT/components/ELEMENTS/CARD/card.css"}],"src/ASSETS/SCREENSHOTS/SIMON_DICE_.png":[function(require,module,exports) {
-module.exports = "/SIMON_DICE_.dfa369e2.png";
-},{}],"src/REACT/components/PROYECTOS/proyectos.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../BADGE/badge":"src/REACT/components/ELEMENTS/BADGE/badge.js","./card.css":"src/REACT/components/ELEMENTS/CARD/card.css"}],"src/REACT/components/PROYECTOS/proyectosAux.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Trifuerza_ALBW = _interopRequireDefault(require("../../../ASSETS/Trifuerza_ALBW.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ProyectosDetacados = [{
+  "Img": '/Trifuerza_ALBW.png',
+  "AltImg": 'imagen',
+  "Title": 'SIMON DICE',
+  "Lenguaje": 'JS',
+  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
+  "Link": 'https://ja54312.github.io/SIMON_DICE/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": "/ASSETS/SCREENSHOTS/SIMON_DICE_.png",
+  "AltImg": 'imagen',
+  "Title": 'SIMON DICE',
+  "Lenguaje": 'JS',
+  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
+  "Link": 'https://ja54312.github.io/SIMON_DICE/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": "/ASSETS/SIMON_DICE_.png",
+  "AltImg": 'imagen',
+  "Title": 'SIMON DICE',
+  "Lenguaje": 'JS',
+  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
+  "Link": 'https://ja54312.github.io/SIMON_DICE/',
+  "ButtonText": 'Ir a la web'
+}];
+var _default = ProyectosDetacados;
+exports.default = _default;
+},{"../../../ASSETS/Trifuerza_ALBW.png":"src/ASSETS/Trifuerza_ALBW.png"}],"src/REACT/components/PROYECTOS/proyectos.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29806,28 +29844,36 @@ var _react = _interopRequireDefault(require("react"));
 
 var _card = _interopRequireDefault(require("../ELEMENTS/CARD/card"));
 
-var _SIMON_DICE_ = _interopRequireDefault(require("../../../ASSETS/SCREENSHOTS/SIMON_DICE_.png"));
+var _proyectosAux = _interopRequireDefault(require("./proyectosAux"));
 
 require("./proyectos.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Proyectos = function Proyectos() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  //console.log(proyectosAux,"proyectos aux")
+  //console.log(proyectosAux[0],"proyectos aux")
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, _proyectosAux.default && /*#__PURE__*/_react.default.createElement("div", {
     className: "container-proyectos"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "PROYECTITOS"), /*#__PURE__*/_react.default.createElement(_card.default, {
-    Img: _SIMON_DICE_.default,
-    AltImg: 'imagen',
-    Title: 'SIMON DICE',
-    TextoCard: 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
-    Link: 'https://ja54312.github.io/SIMON_DICE/',
-    ButtonText: 'Ir a la web'
-  })));
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "PROYECTITOS"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-cards"
+  }, _proyectosAux.default && _proyectosAux.default.map(function (element, key) {
+    return /*#__PURE__*/_react.default.createElement(_card.default, {
+      key: key,
+      Img: element.Img,
+      AltImg: element.AltImg,
+      Title: element.Title,
+      Lenguaje: element.Lenguaje,
+      TextoCard: element.TextoCard,
+      Link: element.Link,
+      ButtonText: element.ButtonText
+    });
+  }))));
 };
 
 var _default = Proyectos;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../ELEMENTS/CARD/card":"src/REACT/components/ELEMENTS/CARD/card.js","../../../ASSETS/SCREENSHOTS/SIMON_DICE_.png":"src/ASSETS/SCREENSHOTS/SIMON_DICE_.png","./proyectos.css":"src/REACT/components/PROYECTOS/proyectos.css"}],"src/REACT/components/SOBREMI/sobremi.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../ELEMENTS/CARD/card":"src/REACT/components/ELEMENTS/CARD/card.js","./proyectosAux":"src/REACT/components/PROYECTOS/proyectosAux.js","./proyectos.css":"src/REACT/components/PROYECTOS/proyectos.css"}],"src/REACT/components/SOBREMI/sobremi.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -30094,7 +30140,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38717" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44281" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
