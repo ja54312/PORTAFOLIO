@@ -81,7 +81,8 @@
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
-    width: 18rem;
+    width: 16rem;
+    height: 22rem;
 }
 .card-img-top{
     max-height: 150px;
@@ -165,7 +166,7 @@
 .container-divs{
     width: 100%;
     align-items: center;  
-    margin: 0 10%;  
+    margin: 3% 10%;  
 }
 .container-contacts{
     display: flex;

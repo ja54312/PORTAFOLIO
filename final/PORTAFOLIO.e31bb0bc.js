@@ -29795,39 +29795,35 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _Trifuerza_ALBW = _interopRequireDefault(require("../../../ASSETS/Trifuerza_ALBW.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+var sitio = 'https://ja54312.github.io/PORTAFOLIO/';
 var ProyectosDetacados = [{
-  "Img": '/Trifuerza_ALBW.png',
-  "AltImg": 'imagen',
+  "Img": sitio + '/ASSETS/SCREENSHOTS/SIMON_DICE_.png',
+  "AltImg": 'imagen de simon dice',
   "Title": 'SIMON DICE',
   "Lenguaje": 'JS',
   "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
   "Link": 'https://ja54312.github.io/SIMON_DICE/',
   "ButtonText": 'Ir a la web'
 }, {
-  "Img": "/ASSETS/SCREENSHOTS/SIMON_DICE_.png",
-  "AltImg": 'imagen',
-  "Title": 'SIMON DICE',
-  "Lenguaje": 'JS',
-  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
-  "Link": 'https://ja54312.github.io/SIMON_DICE/',
+  "Img": sitio + '/ASSETS/SCREENSHOTS/MOBILE_FIRST_.png',
+  "AltImg": 'imagen de batatabit',
+  "Title": 'BATATABIT',
+  "Lenguaje": 'HTML-CSS',
+  "TextoCard": 'Creación de pagina Batatabit basado en diesño de FIGMA.Creado con metodologia Mobile First',
+  "Link": 'https://ja54312.github.io/MOBILE_FIRST/',
   "ButtonText": 'Ir a la web'
 }, {
-  "Img": "/ASSETS/SIMON_DICE_.png",
-  "AltImg": 'imagen',
-  "Title": 'SIMON DICE',
-  "Lenguaje": 'JS',
-  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
-  "Link": 'https://ja54312.github.io/SIMON_DICE/',
+  "Img": sitio + '/ASSETS/SCREENSHOTS/marcosclasee-screenshot.png',
+  "AltImg": 'imagen de marcosclass',
+  "Title": 'Marcos Class',
+  "Lenguaje": 'REACT',
+  "TextoCard": 'Landing page para clases de Ingles creado con Parcel y React',
+  "Link": 'https://www.marcosclass.online/',
   "ButtonText": 'Ir a la web'
 }];
 var _default = ProyectosDetacados;
 exports.default = _default;
-},{"../../../ASSETS/Trifuerza_ALBW.png":"src/ASSETS/Trifuerza_ALBW.png"}],"src/REACT/components/PROYECTOS/proyectos.css":[function(require,module,exports) {
+},{}],"src/REACT/components/PROYECTOS/proyectos.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -30140,7 +30136,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44281" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35471" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
