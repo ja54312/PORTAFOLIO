@@ -29795,9 +29795,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var sitio = 'https://ja54312.github.io/PORTAFOLIO';
 var ProyectosDetacados = [{
-  "Img": sitio + '/ASSETS/SCREENSHOTS/SIMON_DICE_.png',
+  "Img": 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
   "AltImg": 'imagen de simon dice',
   "Title": 'SIMON DICE',
   "Lenguaje": 'JS',
@@ -29805,7 +29804,7 @@ var ProyectosDetacados = [{
   "Link": 'https://ja54312.github.io/SIMON_DICE/',
   "ButtonText": 'Ir a la web'
 }, {
-  "Img": sitio + '/ASSETS/SCREENSHOTS/MOBILE_FIRST_.png',
+  "Img": '/ASSETS/SCREENSHOTS/MOBILE_FIRST_.png',
   "AltImg": 'imagen de batatabit',
   "Title": 'BATATABIT',
   "Lenguaje": 'HTML-CSS',
@@ -29813,7 +29812,7 @@ var ProyectosDetacados = [{
   "Link": 'https://ja54312.github.io/MOBILE_FIRST/',
   "ButtonText": 'Ir a la web'
 }, {
-  "Img": sitio + '/ASSETS/SCREENSHOTS/marcosclasee-screenshot.png',
+  "Img": 'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
   "AltImg": 'imagen de marcosclass',
   "Title": 'Marcos Class',
   "Lenguaje": 'REACT',
@@ -30060,9 +30059,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var sitio = 'https://ja54312.github.io/PORTAFOLIO';
 var MasProyectosAux = [{
-  "Img": sitio + '/ASSETS/SCREENSHOTS/Bootstrap_Conferencia_.png',
+  "Img": 'https://i.postimg.cc/qMHjsf7t/Bootstrap-Conferencia.png',
   "AltImg": 'imagen de conferencia',
   "Title": 'Conferencia',
   "Lenguaje": 'Bootstrap',
@@ -30070,7 +30068,7 @@ var MasProyectosAux = [{
   "Link": 'https://ja54312.github.io/Bootstrap_Conferencia/',
   "ButtonText": 'Ir a la web'
 }, {
-  "Img": sitio + '/ASSETS/SCREENSHOTS/E-SHOPP-DRACO_.png',
+  "Img": 'https://i.postimg.cc/MGLYXN4p/E-SHOPP-DRACO.png',
   "AltImg": 'imagen de e shop draco',
   "Title": 'E-Comerce',
   "Lenguaje": 'HTML-CSS',
@@ -30078,7 +30076,7 @@ var MasProyectosAux = [{
   "Link": 'https://ja54312.github.io/E-SHOPP-DRACO/',
   "ButtonText": 'Ir a la web'
 }, {
-  "Img": sitio + '/ASSETS/SCREENSHOTS/GOOGLE-CLONE_.png',
+  "Img": 'https://i.postimg.cc/ZntFx3Jk/GOOGLE-CLONE.png',
   "AltImg": 'imagen de google clone',
   "Title": 'GOOGLE-Clone',
   "Lenguaje": 'CLONE',
@@ -30086,7 +30084,7 @@ var MasProyectosAux = [{
   "Link": 'https://ja54312.github.io/GOOGLE-CLONE/',
   "ButtonText": 'Ir a la web'
 }, {
-  "Img": sitio + '/ASSETS/SCREENSHOTS/Mi_Blog_index.html.png',
+  "Img": 'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
   "AltImg": 'imagen de mi blog',
   "Title": 'Mi Blog',
   "Lenguaje": 'HTML-CSS',
@@ -30223,7 +30221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45789" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34027" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

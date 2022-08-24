@@ -1,7 +1,6 @@
-const sitio = 'https://ja54312.github.io/PORTAFOLIO'
 const ProyectosDetacados = [
     {
-        "Img": sitio +'/ASSETS/SCREENSHOTS/SIMON_DICE_.png',
+        "Img": 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
         "AltImg":'imagen de simon dice', 
         "Title":'SIMON DICE',
         "Lenguaje":'JS',
@@ -10,7 +9,7 @@ const ProyectosDetacados = [
         "ButtonText":'Ir a la web'
     },
     {
-        "Img": sitio +'/ASSETS/SCREENSHOTS/MOBILE_FIRST_.png',
+        "Img": '/ASSETS/SCREENSHOTS/MOBILE_FIRST_.png',
         "AltImg":'imagen de batatabit', 
         "Title":'BATATABIT',
         "Lenguaje":'HTML-CSS',
@@ -19,7 +18,7 @@ const ProyectosDetacados = [
         "ButtonText":'Ir a la web'
     },
     {
-        "Img": sitio +'/ASSETS/SCREENSHOTS/marcosclasee-screenshot.png',
+        "Img":'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
         "AltImg":'imagen de marcosclass', 
         "Title":'Marcos Class',
         "Lenguaje":'REACT',

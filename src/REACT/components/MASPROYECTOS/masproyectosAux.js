@@ -1,7 +1,6 @@
-const sitio = 'https://ja54312.github.io/PORTAFOLIO'
 const MasProyectosAux = [
     {
-        "Img": sitio +'/ASSETS/SCREENSHOTS/Bootstrap_Conferencia_.png',
+        "Img":'https://i.postimg.cc/qMHjsf7t/Bootstrap-Conferencia.png',
         "AltImg":'imagen de conferencia', 
         "Title":'Conferencia',
         "Lenguaje":'Bootstrap',
@@ -10,7 +9,7 @@ const MasProyectosAux = [
         "ButtonText":'Ir a la web'
     },
     {
-        "Img": sitio +'/ASSETS/SCREENSHOTS/E-SHOPP-DRACO_.png',
+        "Img": 'https://i.postimg.cc/MGLYXN4p/E-SHOPP-DRACO.png',
         "AltImg":'imagen de e shop draco', 
         "Title":'E-Comerce',
         "Lenguaje":'HTML-CSS',
@@ -19,7 +18,7 @@ const MasProyectosAux = [
         "ButtonText":'Ir a la web'
     },
     {
-        "Img": sitio +'/ASSETS/SCREENSHOTS/GOOGLE-CLONE_.png',
+        "Img": 'https://i.postimg.cc/ZntFx3Jk/GOOGLE-CLONE.png',
         "AltImg":'imagen de google clone', 
         "Title":'GOOGLE-Clone',
         "Lenguaje":'CLONE',
@@ -28,7 +27,7 @@ const MasProyectosAux = [
         "ButtonText":'Ir a la web'
     },
     {
-        "Img": sitio +'/ASSETS/SCREENSHOTS/Mi_Blog_index.html.png',
+        "Img":'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
         "AltImg":'imagen de mi blog', 
         "Title":'Mi Blog',
         "Lenguaje":'HTML-CSS',
