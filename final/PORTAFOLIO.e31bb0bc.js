@@ -29847,11 +29847,9 @@ require("./proyectos.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Proyectos = function Proyectos() {
-  //console.log(proyectosAux,"proyectos aux")
-  //console.log(proyectosAux[0],"proyectos aux")
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, _proyectosAux.default && /*#__PURE__*/_react.default.createElement("div", {
     className: "container-proyectos"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "PROYECTITOS"), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "PROYECTOS DESTACADOS"), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-cards"
   }, _proyectosAux.default && _proyectosAux.default.map(function (element, key) {
     return /*#__PURE__*/_react.default.createElement(_card.default, {
@@ -30055,7 +30053,94 @@ var Footer = function Footer() {
 
 var _default = Footer;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./footer.css":"src/REACT/components/FOOTER/footer.css"}],"src/REACT/components/PRUEBA/prueba.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./footer.css":"src/REACT/components/FOOTER/footer.css"}],"src/REACT/components/MASPROYECTOS/masproyectosAux.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var sitio = 'https://ja54312.github.io/PORTAFOLIO/';
+var MasProyectosAux = [{
+  "Img": sitio + '/ASSETS/SCREENSHOTS/Bootstrap_Conferencia_.png',
+  "AltImg": 'imagen de conferencia',
+  "Title": 'Conferencia',
+  "Lenguaje": 'Bootstrap',
+  "TextoCard": 'Una simulacion de una pagina para anunciar una conferencia y compra de tickets',
+  "Link": 'https://ja54312.github.io/Bootstrap_Conferencia/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": sitio + '/ASSETS/SCREENSHOTS/E-SHOPP-DRACO_.png',
+  "AltImg": 'imagen de e shop draco',
+  "Title": 'E-Comerce',
+  "Lenguaje": 'HTML-CSS',
+  "TextoCard": 'E-Comerce ficticio que vende huevos de Dragon',
+  "Link": 'https://ja54312.github.io/E-SHOPP-DRACO/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": sitio + '/ASSETS/SCREENSHOTS/GOOGLE-CLONE_.png',
+  "AltImg": 'imagen de google clone',
+  "Title": 'GOOGLE-Clone',
+  "Lenguaje": 'CLONE',
+  "TextoCard": 'Una copia Front de la pagina del buscador GOOGLE',
+  "Link": 'https://ja54312.github.io/GOOGLE-CLONE/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": sitio + '/ASSETS/SCREENSHOTS/Mi_Blog_index.html.png',
+  "AltImg": 'imagen de mi blog',
+  "Title": 'Mi Blog',
+  "Lenguaje": 'HTML-CSS',
+  "TextoCard": 'Pagina tipo Blog',
+  "Link": 'https://ja54312.github.io/Mi_Blog/index.html',
+  "ButtonText": 'Ir a la web'
+}];
+var _default = MasProyectosAux;
+exports.default = _default;
+},{}],"src/REACT/components/MASPROYECTOS/masproyectos.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/MASPROYECTOS/masproyectos.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _card = _interopRequireDefault(require("../ELEMENTS/CARD/card"));
+
+var _masproyectosAux = _interopRequireDefault(require("./masproyectosAux"));
+
+require("./masproyectos.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MasProyectos = function MasProyectos() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, _masproyectosAux.default && /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-mas-proyectos"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "MAS PROYECTOS"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-cards"
+  }, _masproyectosAux.default && _masproyectosAux.default.map(function (element, key) {
+    return /*#__PURE__*/_react.default.createElement(_card.default, {
+      key: key,
+      Img: element.Img,
+      AltImg: element.AltImg,
+      Title: element.Title,
+      Lenguaje: element.Lenguaje,
+      TextoCard: element.TextoCard,
+      Link: element.Link,
+      ButtonText: element.ButtonText
+    });
+  }))));
+};
+
+var _default = MasProyectos;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../ELEMENTS/CARD/card":"src/REACT/components/ELEMENTS/CARD/card.js","./masproyectosAux":"src/REACT/components/MASPROYECTOS/masproyectosAux.js","./masproyectos.css":"src/REACT/components/MASPROYECTOS/masproyectos.css"}],"src/REACT/components/PRUEBA/prueba.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30097,18 +30182,20 @@ var _contacto = _interopRequireDefault(require("./src/REACT/components/CONTACTO/
 
 var _footer = _interopRequireDefault(require("./src/REACT/components/FOOTER/footer"));
 
+var _masproyectos = _interopRequireDefault(require("./src/REACT/components/MASPROYECTOS/masproyectos"));
+
 var _prueba = _interopRequireDefault(require("./src/REACT/components/PRUEBA/prueba"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_hero.default, null), /*#__PURE__*/_react.default.createElement(_proyectos.default, null), /*#__PURE__*/_react.default.createElement(_sobremi.default, null), /*#__PURE__*/_react.default.createElement(_contacto.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_hero.default, null), /*#__PURE__*/_react.default.createElement(_proyectos.default, null), /*#__PURE__*/_react.default.createElement(_masproyectos.default, null), /*#__PURE__*/_react.default.createElement(_sobremi.default, null), /*#__PURE__*/_react.default.createElement(_contacto.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
 
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/HERO/hero":"src/REACT/components/HERO/hero.js","./src/REACT/components/PROYECTOS/proyectos":"src/REACT/components/PROYECTOS/proyectos.js","./src/REACT/components/SOBREMI/sobremi":"src/REACT/components/SOBREMI/sobremi.js","./src/REACT/components/CONTACTO/contacto":"src/REACT/components/CONTACTO/contacto.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js","./src/REACT/components/PRUEBA/prueba":"src/REACT/components/PRUEBA/prueba.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/HERO/hero":"src/REACT/components/HERO/hero.js","./src/REACT/components/PROYECTOS/proyectos":"src/REACT/components/PROYECTOS/proyectos.js","./src/REACT/components/SOBREMI/sobremi":"src/REACT/components/SOBREMI/sobremi.js","./src/REACT/components/CONTACTO/contacto":"src/REACT/components/CONTACTO/contacto.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js","./src/REACT/components/MASPROYECTOS/masproyectos":"src/REACT/components/MASPROYECTOS/masproyectos.js","./src/REACT/components/PRUEBA/prueba":"src/REACT/components/PRUEBA/prueba.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30136,7 +30223,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35471" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33837" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

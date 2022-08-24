@@ -1,15 +1,15 @@
 import React from 'react'
 import Card from '../ELEMENTS/CARD/card'
-import proyectosAux from './proyectosAux'
-import './proyectos.css'
+import proyectosAux from './masproyectosAux'
+import './masproyectos.css'
 
-const Proyectos = () => {
+const MasProyectos = () => {
 
-
+   
     return(
         <>
-            {proyectosAux && <div className='container-proyectos'>
-                <h2>PROYECTOS DESTACADOS</h2>
+            {proyectosAux && <div className='container-mas-proyectos'>
+                <h2>MAS PROYECTOS</h2>
                 <div className='container-cards'>
                     {proyectosAux && proyectosAux.map((element,key) =>{
                         return(
@@ -33,4 +33,4 @@ const Proyectos = () => {
 
 }
 
-export default Proyectos
+export default MasProyectos
