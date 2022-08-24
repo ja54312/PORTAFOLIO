@@ -41,6 +41,11 @@
     padding: 1rem;
     font-size: 2.5rem;
     text-align: center;
+} 
+@media screen and (max-width:767px){
+    .container-hero{
+        font-size: 1rem;
+    }
 }/*BADGE*/
 .badge{
     display: inline-block;
@@ -138,6 +143,14 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+@media screen and (max-width:767px){
+    .container-proyectos{
+       margin: 10px 0;
+    }
+    .container-proyectos h2{
+        text-align: center;
+    }
 }.text-sobre-mi {
     padding-left: 2rem;
     font-size: 1.5rem;
@@ -157,6 +170,11 @@
 .img-aboutme{
     height: 50px;
     width: 50px;
+}
+@media screen and (max-width:767px){
+    .text-sobre-mi{
+        font-size: 1rem;
+    }
 }.container-contacto{
     margin: auto;
 }
@@ -218,4 +236,12 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+@media screen and (max-width:767px){
+    .container-mas-proyectos{
+       margin: 10px 0;
+    }
+    .container-mas-proyectos h2{
+        text-align: center;
+    }
 }

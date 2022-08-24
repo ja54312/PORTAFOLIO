@@ -8,3 +8,11 @@
     align-items: center;
     align-content: center;
 }
+@media screen and (max-width:767px){
+    .container-proyectos{
+       margin: 10px 0;
+    }
+    .container-proyectos h2{
+        text-align: center;
+    }
+}

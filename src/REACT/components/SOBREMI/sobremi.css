@@ -18,3 +18,8 @@
     height: 50px;
     width: 50px;
 }
+@media screen and (max-width:767px){
+    .text-sobre-mi{
+        font-size: 1rem;
+    }
+}
