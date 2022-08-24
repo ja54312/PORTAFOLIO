@@ -9,7 +9,7 @@ const ProyectosDetacados = [
         "ButtonText":'Ir a la web'
     },
     {
-        "Img": '/ASSETS/SCREENSHOTS/MOBILE_FIRST_.png',
+        "Img": 'https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png',
         "AltImg":'imagen de batatabit', 
         "Title":'BATATABIT',
         "Lenguaje":'HTML-CSS',
