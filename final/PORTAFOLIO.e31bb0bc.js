@@ -29795,7 +29795,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var sitio = 'https://ja54312.github.io/PORTAFOLIO/';
+var sitio = 'https://ja54312.github.io/PORTAFOLIO';
 var ProyectosDetacados = [{
   "Img": sitio + '/ASSETS/SCREENSHOTS/SIMON_DICE_.png',
   "AltImg": 'imagen de simon dice',
@@ -30060,7 +30060,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var sitio = 'https://ja54312.github.io/PORTAFOLIO/';
+var sitio = 'https://ja54312.github.io/PORTAFOLIO';
 var MasProyectosAux = [{
   "Img": sitio + '/ASSETS/SCREENSHOTS/Bootstrap_Conferencia_.png',
   "AltImg": 'imagen de conferencia',
@@ -30223,7 +30223,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46231" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45789" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

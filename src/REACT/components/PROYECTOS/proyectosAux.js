@@ -1,4 +1,4 @@
-const sitio = 'https://ja54312.github.io/PORTAFOLIO/'
+const sitio = 'https://ja54312.github.io/PORTAFOLIO'
 const ProyectosDetacados = [
     {
         "Img": sitio +'/ASSETS/SCREENSHOTS/SIMON_DICE_.png',
