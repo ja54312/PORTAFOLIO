@@ -1,0 +1,18 @@
+.container-proyectos{
+    width: 100%;
+    margin: 10px 25px;
+}
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+@media screen and (max-width:767px){
+    .container-proyectos{
+       margin: 10px 0;
+    }
+    .container-proyectos h2{
+        text-align: center;
+    }
+}

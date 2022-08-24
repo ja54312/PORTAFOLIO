@@ -1,0 +1,37 @@
+.container-contacto{
+    margin: auto;
+}
+.texto-contacto{
+    text-align: center;
+}
+.container-divs{
+    width: 100%;
+    align-items: center;  
+    margin: 3% 10%;  
+}
+.container-contacts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-contact{
+ width:25%;
+}
+.img-contact{
+    height: 50px;
+    width: 50px;
+    color: black;  
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width:767px){
+    .container-divs{
+        margin: 0 5%;  
+    }
+}
+@media (min-width:1200px){
+    h2{
+        font-size:2rem;
+    }
+} 
