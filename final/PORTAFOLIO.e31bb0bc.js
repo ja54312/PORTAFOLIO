@@ -29705,7 +29705,90 @@ var Hero = function Hero() {
 
 var _default = Hero;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./hero.css":"src/REACT/components/HERO/hero.css"}],"src/REACT/components/ELEMENTS/BADGE/badge.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./hero.css":"src/REACT/components/HERO/hero.css"}],"src/REACT/components/PROYECTOS/proyectosAux.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var ProyectosDetacados = [{
+  "Img": 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
+  "AltImg": 'imagen de simon dice',
+  "Title": 'SIMON DICE',
+  "Lenguaje": 'JS',
+  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
+  "Link": 'https://ja54312.github.io/SIMON_DICE/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": 'https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png',
+  "AltImg": 'imagen de batatabit',
+  "Title": 'BATATABIT',
+  "Lenguaje": 'HTML-CSS',
+  "TextoCard": 'Creación de pagina Batatabit basado en diesño de FIGMA.Creado con metodologia Mobile First',
+  "Link": 'https://ja54312.github.io/MOBILE_FIRST/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": 'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
+  "AltImg": 'imagen de marcosclass',
+  "Title": 'Marcos Class',
+  "Lenguaje": 'REACT',
+  "TextoCard": 'Landing page para clases de Ingles creado con Parcel y React',
+  "Link": 'https://ja54312.github.io/Marco-s-class/',
+  "ButtonText": 'Ir a la web'
+}];
+var _default = ProyectosDetacados;
+exports.default = _default;
+},{}],"src/REACT/hooks/useDeviceDetect.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var useDeviceDetect = function useDeviceDetect() {
+  //const [isMobile, setMobile] = useState(false)
+  var anchoPantalla = window.innerWidth;
+  var device = undefined;
+
+  if (anchoPantalla < 767) {
+    device = 'phone';
+  }
+
+  if (device === undefined && 766 < anchoPantalla && anchoPantalla < 905) {
+    device = 'tablet';
+  }
+
+  if (device === undefined && anchoPantalla > 821) {
+    device = 'desktop';
+  } //console.log(anchoPantalla,'anchopantalla')
+  //console.log(device,'dispositivo')
+  // useEffect(()=>{
+  //     const userAgent = typeof navigator === 'undefined' ? '' :navigator.userAgent;
+  //     const mobile = Boolean(
+  //         userAgent.match(
+  //           /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  //         )
+  //       )
+  //       setMobile(mobile)
+  // },[])
+
+
+  return {
+    device: device
+  };
+};
+
+var _default = useDeviceDetect;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/REACT/components/ELEMENTS/BADGE/badge.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29788,41 +29871,153 @@ var Card = function Card(_ref) {
 
 var _default = Card;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../BADGE/badge":"src/REACT/components/ELEMENTS/BADGE/badge.js","./card.css":"src/REACT/components/ELEMENTS/CARD/card.css"}],"src/REACT/components/PROYECTOS/proyectosAux.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../BADGE/badge":"src/REACT/components/ELEMENTS/BADGE/badge.js","./card.css":"src/REACT/components/ELEMENTS/CARD/card.css"}],"src/ASSETS/proximo.png":[function(require,module,exports) {
+module.exports = "/proximo.af7ad849.png";
+},{}],"src/REACT/components/ELEMENTS/CARRUSEL/carrusel.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/ELEMENTS/CARRUSEL/carrusel.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var ProyectosDetacados = [{
-  "Img": 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
-  "AltImg": 'imagen de simon dice',
-  "Title": 'SIMON DICE',
-  "Lenguaje": 'JS',
-  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
-  "Link": 'https://ja54312.github.io/SIMON_DICE/',
-  "ButtonText": 'Ir a la web'
-}, {
-  "Img": 'https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png',
-  "AltImg": 'imagen de batatabit',
-  "Title": 'BATATABIT',
-  "Lenguaje": 'HTML-CSS',
-  "TextoCard": 'Creación de pagina Batatabit basado en diesño de FIGMA.Creado con metodologia Mobile First',
-  "Link": 'https://ja54312.github.io/MOBILE_FIRST/',
-  "ButtonText": 'Ir a la web'
-}, {
-  "Img": 'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
-  "AltImg": 'imagen de marcosclass',
-  "Title": 'Marcos Class',
-  "Lenguaje": 'REACT',
-  "TextoCard": 'Landing page para clases de Ingles creado con Parcel y React',
-  "Link": 'https://www.marcosclass.online/',
-  "ButtonText": 'Ir a la web'
-}];
-var _default = ProyectosDetacados;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _useDeviceDetect2 = _interopRequireDefault(require("../../../hooks/useDeviceDetect"));
+
+var _card = _interopRequireDefault(require("../CARD/card"));
+
+var _proximo = _interopRequireDefault(require("../../../../ASSETS/proximo.png"));
+
+require("./carrusel.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var Carrusel = function Carrusel(_ref) {
+  var proyecto = _ref.proyecto,
+      proyectoLenght = _ref.proyectoLenght;
+
+  var _useDeviceDetect = (0, _useDeviceDetect2.default)(),
+      device = _useDeviceDetect.device;
+
+  var _useState = (0, _react.useState)(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      leftCarrusel = _useState2[0],
+      setLeftCarrusel = _useState2[1];
+
+  var _useState3 = (0, _react.useState)(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      productWidth = _useState4[0],
+      setProductWidth = _useState4[1];
+
+  var slideContainer = (0, _react.useRef)(null);
+  var itemsForScreen;
+  if (device === 'phone') itemsForScreen = 1;
+  if (device === 'tablet') itemsForScreen = 2;
+  if (device === 'desktop') itemsForScreen = 3;
+  var elements = proyectoLenght;
+
+  function onClickPrev() {
+    if (leftCarrusel >= 0) {
+      var allLeft = -productWidth * elements;
+      setLeftCarrusel(allLeft + productWidth * itemsForScreen);
+    } else {
+      var allRight = productWidth * elements;
+
+      if (allRight <= leftCarrusel - productWidth * itemsForScreen) {
+        setLeftCarrusel(0);
+      } else setLeftCarrusel(leftCarrusel + productWidth);
+    }
+  }
+
+  function onClickNext() {
+    var allLeft = -productWidth * elements;
+
+    if (leftCarrusel <= allLeft + productWidth * itemsForScreen) {
+      setLeftCarrusel(0);
+    } else setLeftCarrusel(leftCarrusel - productWidth);
+  }
+
+  window.addEventListener('resize', function () {
+    if (device === 'desktop') {
+      setProductWidth(window.innerWidth / itemsForScreen);
+    } else {
+      setProductWidth(window.innerWidth * .9 / itemsForScreen);
+    }
+  }, true);
+  (0, _react.useEffect)(function () {
+    if (device === 'desktop') {
+      setProductWidth(window.innerWidth / itemsForScreen);
+    } else {
+      setProductWidth(window.innerWidth * .9 / itemsForScreen);
+    }
+  }, []);
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
+    className: "section-carrusel"
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "boton-flecha left",
+    onClick: onClickPrev
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _proximo.default,
+    className: "carrusel-flecha flecha-revert"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-carrusel",
+    ref: slideContainer
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "tractionItems",
+    style: {
+      left: "".concat(leftCarrusel, "px")
+    }
+  }, proyecto && proyecto.map(function (element, key) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: key,
+      style: {
+        width: "".concat(productWidth, "px")
+      },
+      className: "container-card"
+    }, /*#__PURE__*/_react.default.createElement(_card.default, {
+      key: key,
+      Img: element.Img,
+      AltImg: element.AltImg,
+      Title: element.Title,
+      Lenguaje: element.Lenguaje,
+      TextoCard: element.TextoCard,
+      Link: element.Link,
+      ButtonText: element.ButtonText
+    }));
+  }))), /*#__PURE__*/_react.default.createElement("button", {
+    className: "boton-flecha right",
+    onClick: onClickNext
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _proximo.default,
+    className: "carrusel-flecha"
+  }))));
+};
+
+var _default = Carrusel;
 exports.default = _default;
-},{}],"src/REACT/components/PROYECTOS/proyectos.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../../hooks/useDeviceDetect":"src/REACT/hooks/useDeviceDetect.js","../CARD/card":"src/REACT/components/ELEMENTS/CARD/card.js","../../../../ASSETS/proximo.png":"src/ASSETS/proximo.png","./carrusel.css":"src/REACT/components/ELEMENTS/CARRUSEL/carrusel.css"}],"src/REACT/components/PROYECTOS/proyectos.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29837,36 +30032,112 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _card = _interopRequireDefault(require("../ELEMENTS/CARD/card"));
-
 var _proyectosAux = _interopRequireDefault(require("./proyectosAux"));
+
+var _carrusel = _interopRequireDefault(require("../ELEMENTS/CARRUSEL/carrusel"));
 
 require("./proyectos.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//LIBRERIAS
+//COMPONENTES
+//ESTILOS
 var Proyectos = function Proyectos() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, _proyectosAux.default && /*#__PURE__*/_react.default.createElement("div", {
     className: "container-proyectos"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "PROYECTOS DESTACADOS"), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-cards"
-  }, _proyectosAux.default && _proyectosAux.default.map(function (element, key) {
-    return /*#__PURE__*/_react.default.createElement(_card.default, {
-      key: key,
-      Img: element.Img,
-      AltImg: element.AltImg,
-      Title: element.Title,
-      Lenguaje: element.Lenguaje,
-      TextoCard: element.TextoCard,
-      Link: element.Link,
-      ButtonText: element.ButtonText
-    });
+  }, /*#__PURE__*/_react.default.createElement(_carrusel.default, {
+    proyecto: _proyectosAux.default,
+    proyectoLenght: _proyectosAux.default.length
   }))));
 };
 
 var _default = Proyectos;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../ELEMENTS/CARD/card":"src/REACT/components/ELEMENTS/CARD/card.js","./proyectosAux":"src/REACT/components/PROYECTOS/proyectosAux.js","./proyectos.css":"src/REACT/components/PROYECTOS/proyectos.css"}],"src/REACT/components/SOBREMI/sobremi.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./proyectosAux":"src/REACT/components/PROYECTOS/proyectosAux.js","../ELEMENTS/CARRUSEL/carrusel":"src/REACT/components/ELEMENTS/CARRUSEL/carrusel.js","./proyectos.css":"src/REACT/components/PROYECTOS/proyectos.css"}],"src/REACT/components/MASPROYECTOS/masproyectosAux.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var MasProyectosAux = [{
+  "Img": 'https://i.postimg.cc/qMHjsf7t/Bootstrap-Conferencia.png',
+  "AltImg": 'imagen de conferencia',
+  "Title": 'Conferencia',
+  "Lenguaje": 'Bootstrap',
+  "TextoCard": 'Una simulacion de una pagina para anunciar una conferencia y compra de tickets',
+  "Link": 'https://ja54312.github.io/Bootstrap_Conferencia/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": 'https://i.postimg.cc/MGLYXN4p/E-SHOPP-DRACO.png',
+  "AltImg": 'imagen de e shop draco',
+  "Title": 'E-Comerce',
+  "Lenguaje": 'HTML-CSS',
+  "TextoCard": 'E-Comerce ficticio que vende huevos de Dragon',
+  "Link": 'https://ja54312.github.io/E-SHOPP-DRACO/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": 'https://i.postimg.cc/ZntFx3Jk/GOOGLE-CLONE.png',
+  "AltImg": 'imagen de google clone',
+  "Title": 'GOOGLE-Clone',
+  "Lenguaje": 'CLONE',
+  "TextoCard": 'Una copia Front de la pagina del buscador GOOGLE',
+  "Link": 'https://ja54312.github.io/GOOGLE-CLONE/',
+  "ButtonText": 'Ir a la web'
+}, {
+  "Img": 'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
+  "AltImg": 'imagen de mi blog',
+  "Title": 'Mi Blog',
+  "Lenguaje": 'HTML-CSS',
+  "TextoCard": 'Pagina tipo Blog',
+  "Link": 'https://ja54312.github.io/Mi_Blog/index.html',
+  "ButtonText": 'Ir a la web'
+}];
+var _default = MasProyectosAux;
+exports.default = _default;
+},{}],"src/REACT/components/MASPROYECTOS/masproyectos.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/MASPROYECTOS/masproyectos.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _masproyectosAux = _interopRequireDefault(require("./masproyectosAux"));
+
+var _carrusel = _interopRequireDefault(require("../ELEMENTS/CARRUSEL/carrusel"));
+
+require("./masproyectos.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//LIBRERIAS
+//COMPONENTES
+//ESTILOS
+var MasProyectos = function MasProyectos() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, _masproyectosAux.default && /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-mas-proyectos"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "MAS PROYECTOS"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-cards"
+  }, /*#__PURE__*/_react.default.createElement(_carrusel.default, {
+    proyecto: _masproyectosAux.default,
+    proyectoLenght: _masproyectosAux.default.length
+  }))));
+};
+
+var _default = MasProyectos;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./masproyectosAux":"src/REACT/components/MASPROYECTOS/masproyectosAux.js","../ELEMENTS/CARRUSEL/carrusel":"src/REACT/components/ELEMENTS/CARRUSEL/carrusel.js","./masproyectos.css":"src/REACT/components/MASPROYECTOS/masproyectos.css"}],"src/REACT/components/SOBREMI/sobremi.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29916,15 +30187,11 @@ var SobreMi = function SobreMi() {
     className: "img-aboutme"
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "info-aboutme"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "https://ja54312.github.io/lo-que-la-noche-nos-cuenta/",
-    target: "_blank",
-    rel: "noopener noreferrer"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: _podcast.default,
     alt: "podcast",
     className: "img-aboutme"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "info-aboutme"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: _gamer.default,
@@ -30052,111 +30319,7 @@ var Footer = function Footer() {
 
 var _default = Footer;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./footer.css":"src/REACT/components/FOOTER/footer.css"}],"src/REACT/components/MASPROYECTOS/masproyectosAux.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var MasProyectosAux = [{
-  "Img": 'https://i.postimg.cc/qMHjsf7t/Bootstrap-Conferencia.png',
-  "AltImg": 'imagen de conferencia',
-  "Title": 'Conferencia',
-  "Lenguaje": 'Bootstrap',
-  "TextoCard": 'Una simulacion de una pagina para anunciar una conferencia y compra de tickets',
-  "Link": 'https://ja54312.github.io/Bootstrap_Conferencia/',
-  "ButtonText": 'Ir a la web'
-}, {
-  "Img": 'https://i.postimg.cc/MGLYXN4p/E-SHOPP-DRACO.png',
-  "AltImg": 'imagen de e shop draco',
-  "Title": 'E-Comerce',
-  "Lenguaje": 'HTML-CSS',
-  "TextoCard": 'E-Comerce ficticio que vende huevos de Dragon',
-  "Link": 'https://ja54312.github.io/E-SHOPP-DRACO/',
-  "ButtonText": 'Ir a la web'
-}, {
-  "Img": 'https://i.postimg.cc/ZntFx3Jk/GOOGLE-CLONE.png',
-  "AltImg": 'imagen de google clone',
-  "Title": 'GOOGLE-Clone',
-  "Lenguaje": 'CLONE',
-  "TextoCard": 'Una copia Front de la pagina del buscador GOOGLE',
-  "Link": 'https://ja54312.github.io/GOOGLE-CLONE/',
-  "ButtonText": 'Ir a la web'
-}, {
-  "Img": 'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
-  "AltImg": 'imagen de mi blog',
-  "Title": 'Mi Blog',
-  "Lenguaje": 'HTML-CSS',
-  "TextoCard": 'Pagina tipo Blog',
-  "Link": 'https://ja54312.github.io/Mi_Blog/index.html',
-  "ButtonText": 'Ir a la web'
-}];
-var _default = MasProyectosAux;
-exports.default = _default;
-},{}],"src/REACT/components/MASPROYECTOS/masproyectos.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/REACT/components/MASPROYECTOS/masproyectos.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _card = _interopRequireDefault(require("../ELEMENTS/CARD/card"));
-
-var _masproyectosAux = _interopRequireDefault(require("./masproyectosAux"));
-
-require("./masproyectos.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var MasProyectos = function MasProyectos() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, _masproyectosAux.default && /*#__PURE__*/_react.default.createElement("div", {
-    className: "container-mas-proyectos"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "MAS PROYECTOS"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "container-cards"
-  }, _masproyectosAux.default && _masproyectosAux.default.map(function (element, key) {
-    return /*#__PURE__*/_react.default.createElement(_card.default, {
-      key: key,
-      Img: element.Img,
-      AltImg: element.AltImg,
-      Title: element.Title,
-      Lenguaje: element.Lenguaje,
-      TextoCard: element.TextoCard,
-      Link: element.Link,
-      ButtonText: element.ButtonText
-    });
-  }))));
-};
-
-var _default = MasProyectos;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../ELEMENTS/CARD/card":"src/REACT/components/ELEMENTS/CARD/card.js","./masproyectosAux":"src/REACT/components/MASPROYECTOS/masproyectosAux.js","./masproyectos.css":"src/REACT/components/MASPROYECTOS/masproyectos.css"}],"src/REACT/components/PRUEBA/prueba.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Prueba = function Prueba() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "Prueba"));
-};
-
-var _default = Prueba;
-exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./footer.css":"src/REACT/components/FOOTER/footer.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30174,15 +30337,13 @@ var _hero = _interopRequireDefault(require("./src/REACT/components/HERO/hero"));
 
 var _proyectos = _interopRequireDefault(require("./src/REACT/components/PROYECTOS/proyectos"));
 
+var _masproyectos = _interopRequireDefault(require("./src/REACT/components/MASPROYECTOS/masproyectos"));
+
 var _sobremi = _interopRequireDefault(require("./src/REACT/components/SOBREMI/sobremi"));
 
 var _contacto = _interopRequireDefault(require("./src/REACT/components/CONTACTO/contacto"));
 
 var _footer = _interopRequireDefault(require("./src/REACT/components/FOOTER/footer"));
-
-var _masproyectos = _interopRequireDefault(require("./src/REACT/components/MASPROYECTOS/masproyectos"));
-
-var _prueba = _interopRequireDefault(require("./src/REACT/components/PRUEBA/prueba"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30193,7 +30354,7 @@ function App() {
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/HERO/hero":"src/REACT/components/HERO/hero.js","./src/REACT/components/PROYECTOS/proyectos":"src/REACT/components/PROYECTOS/proyectos.js","./src/REACT/components/SOBREMI/sobremi":"src/REACT/components/SOBREMI/sobremi.js","./src/REACT/components/CONTACTO/contacto":"src/REACT/components/CONTACTO/contacto.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js","./src/REACT/components/MASPROYECTOS/masproyectos":"src/REACT/components/MASPROYECTOS/masproyectos.js","./src/REACT/components/PRUEBA/prueba":"src/REACT/components/PRUEBA/prueba.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/REACT/components/HEADER/header":"src/REACT/components/HEADER/header.js","./src/REACT/components/HERO/hero":"src/REACT/components/HERO/hero.js","./src/REACT/components/PROYECTOS/proyectos":"src/REACT/components/PROYECTOS/proyectos.js","./src/REACT/components/MASPROYECTOS/masproyectos":"src/REACT/components/MASPROYECTOS/masproyectos.js","./src/REACT/components/SOBREMI/sobremi":"src/REACT/components/SOBREMI/sobremi.js","./src/REACT/components/CONTACTO/contacto":"src/REACT/components/CONTACTO/contacto.js","./src/REACT/components/FOOTER/footer":"src/REACT/components/FOOTER/footer.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30221,7 +30382,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45467" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36835" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

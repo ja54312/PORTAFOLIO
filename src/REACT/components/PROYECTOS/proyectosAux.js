@@ -23,7 +23,7 @@ const ProyectosDetacados = [
         "Title":'Marcos Class',
         "Lenguaje":'REACT',
         "TextoCard":'Landing page para clases de Ingles creado con Parcel y React',
-        "Link":'https://www.marcosclass.online/',
+        "Link":'https://ja54312.github.io/Marco-s-class/',
         "ButtonText":'Ir a la web'
     }
 ]

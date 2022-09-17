@@ -21,5 +21,6 @@
 @media screen and (max-width:767px){
     .text-sobre-mi{
         font-size: 1rem;
+        padding-right: 1rem;
     }
 }

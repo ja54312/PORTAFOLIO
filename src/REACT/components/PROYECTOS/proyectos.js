@@ -1,31 +1,19 @@
+//LIBRERIAS
 import React from 'react'
-import Card from '../ELEMENTS/CARD/card'
+//COMPONENTES
 import proyectosAux from './proyectosAux'
+import Carrusel from '../ELEMENTS/CARRUSEL/carrusel'
+//ESTILOS
 import './proyectos.css'
 
 const Proyectos = () => {
-
-
+ 
     return(
         <>
             {proyectosAux && <div className='container-proyectos'>
                 <h2>PROYECTOS DESTACADOS</h2>
                 <div className='container-cards'>
-                    {proyectosAux && proyectosAux.map((element,key) =>{
-                        return(
-                            <Card
-                                key={key}
-                                Img={element.Img}
-                                AltImg={element.AltImg} 
-                                Title={element.Title}
-                                Lenguaje={element.Lenguaje}
-                                TextoCard={element.TextoCard}
-                                Link={element.Link}
-                                ButtonText={element.ButtonText}
-                            />
-                        )
-                    }) 
-                    }
+                    <Carrusel proyecto={proyectosAux} proyectoLenght={proyectosAux.length}/>
                 </div>
             </div>}
         </>
