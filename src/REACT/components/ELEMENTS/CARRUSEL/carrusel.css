@@ -1,0 +1,57 @@
+.section-carrusel{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.container-carrusel{
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border:none;
+}
+.tractionItems{
+    position: relative;
+    display: flex;
+    transition: all 0.5s ease;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+}
+.container-card{
+    scroll-snap-align: center;
+}
+.boton-flecha{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+.left{
+    left:0;
+}
+.right{
+    right: 0;
+}
+.carrusel-flecha{
+    width: 30px;
+    height: 30px;
+}
+.flecha-revert{
+    transform: rotate(-180deg);
+}
+@media screen and (min-width: 820px){
+    .section-carrusel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-carrusel {
+         width: 89%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .container-carrusel {
+        width: 80%;
+   }
+}

@@ -26,9 +26,9 @@ const SobreMi = () => {
                         <img src={FRONT} alt="FrontEnd" className="img-aboutme"/>
                     </div>
                     <div className="info-aboutme">
-                        <a href="https://ja54312.github.io/lo-que-la-noche-nos-cuenta/" target='_blank' rel='noopener noreferrer'>
+                        {/* <a href="https://ja54312.github.io/lo-que-la-noche-nos-cuenta/" target='_blank' rel='noopener noreferrer'> */}
                             <img src={PODCAST} alt="podcast" className="img-aboutme"/>
-                        </a>
+                        {/* </a> */}
                     </div>
                     <div className="info-aboutme">
                     <img src={GAMER} alt="gamer" className="img-aboutme"/>

@@ -76,7 +76,7 @@
     background-color: #212529;
 }.card{
     padding: 1rem;
-    margin: 2rem;
+    margin: 3rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -134,9 +134,68 @@
     color: #fff;
     background-color: #0d6efd;
     border-color: #0d6efd;
+}.section-carrusel{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.container-carrusel{
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border:none;
+}
+.tractionItems{
+    position: relative;
+    display: flex;
+    transition: all 0.5s ease;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+}
+.container-card{
+    scroll-snap-align: center;
+}
+.boton-flecha{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+.left{
+    left:0;
+}
+.right{
+    right: 0;
+}
+.carrusel-flecha{
+    width: 30px;
+    height: 30px;
+}
+.flecha-revert{
+    transform: rotate(-180deg);
+}
+@media screen and (min-width: 820px){
+    .section-carrusel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-carrusel {
+         width: 89%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .container-carrusel {
+        width: 80%;
+   }
 }.container-proyectos{
     width: 100%;
-    margin: 10px 25px;
+    margin: 10px 0px;
+}
+.container-proyectos h2{
+    margin-left: 25px;
 }
 .container-cards{
     display: flex;
@@ -149,6 +208,27 @@
        margin: 10px 0;
     }
     .container-proyectos h2{
+        text-align: center;
+    }
+}.container-mas-proyectos{
+    width: 100%;
+    margin: 10px 0px;
+}
+.container-mas-proyectos h2{
+    margin-left: 25px;
+}
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+@media screen and (max-width:767px){
+    .container-mas-proyectos{
+       margin: 10px 0;
+    }
+    .container-mas-proyectos h2{
         text-align: center;
     }
 }.text-sobre-mi {
@@ -174,6 +254,7 @@
 @media screen and (max-width:767px){
     .text-sobre-mi{
         font-size: 1rem;
+        padding-right: 1rem;
     }
 }.container-contacto{
     margin: auto;
@@ -226,22 +307,4 @@
 .text-footer a {
     text-decoration: none;
     color: white;
-}.container-mas-proyectos{
-    width: 100%;
-    margin: 10px 25px;
-}
-.container-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-@media screen and (max-width:767px){
-    .container-mas-proyectos{
-       margin: 10px 0;
-    }
-    .container-mas-proyectos h2{
-        text-align: center;
-    }
 }
