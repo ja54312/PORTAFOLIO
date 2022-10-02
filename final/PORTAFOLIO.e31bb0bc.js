@@ -29721,6 +29721,14 @@ var ProyectosDetacados = [{
   "Link": 'https://ja54312.github.io/SIMON_DICE/',
   "ButtonText": 'Ir a la web'
 }, {
+  "Img": 'https://i.postimg.cc/28P6g71J/APP-NOTES.png',
+  "AltImg": 'imagen de app notes',
+  "Title": 'APP NOTES',
+  "Lenguaje": 'REACT',
+  "TextoCard": 'App To-DO creada en react con el uso de useState y useEffect.Guardando tus tareas en el localStorage',
+  "Link": 'https://ja54312.github.io/APP_NOTES/',
+  "ButtonText": 'Ir a la web'
+}, {
   "Img": 'https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png',
   "AltImg": 'imagen de batatabit',
   "Title": 'BATATABIT',
@@ -30383,9 +30391,13 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "35419" + '/');
 =======
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "36835" + '/');
+>>>>>>> DEVELOPMENT
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34375" + '/');
 >>>>>>> DEVELOPMENT
 
   ws.onmessage = function (event) {
