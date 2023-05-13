@@ -29700,7 +29700,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Hero = function Hero() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
     className: "container-hero"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Front-End Developer con 2 a\xF1os de experiencia con JavaScript  y ReactJs . Actualmente me encuentro en b\xFAsqueda de nuevos desaf\xEDos que me permitan crecer profesionalmente y convertirme en Full Stack. En b\xFAsqueda de un trabajo remoto que me permita perfeccionar ReactJs.")));
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Full Stack Developer con 2 a\xF1os de experiencia,con mayor dominio de Front-End. En Busca de nuevos desafios y seguir perfeccionandome como desarrollador.")));
 };
 
 var _default = Hero;
@@ -29713,6 +29713,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var ProyectosDetacados = [{
+  "Img": 'https://i.postimg.cc/0yxTZ71J/Airbnb-Clone-png.png',
+  "AltImg": 'imagen de airbnb clone',
+  "Title": 'Airbnbn Clone',
+  "Lenguaje": 'NEXT JS',
+  "TextoCard": 'Un clon con funcionalidad de airbnb,hecho en NextJs con Typescripy,MongoDB y Prisma',
+  "Link": 'https://cloneairbnb-eta.vercel.app/',
+  "ButtonText": 'Ir a la web'
+}, {
   "Img": 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
   "AltImg": 'imagen de simon dice',
   "Title": 'SIMON DICE',
@@ -29735,14 +29743,6 @@ var ProyectosDetacados = [{
   "Lenguaje": 'HTML-CSS',
   "TextoCard": 'Creación de pagina Batatabit basado en diesño de FIGMA.Creado con metodologia Mobile First',
   "Link": 'https://ja54312.github.io/MOBILE_FIRST/',
-  "ButtonText": 'Ir a la web'
-}, {
-  "Img": 'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
-  "AltImg": 'imagen de marcosclass',
-  "Title": 'Marcos Class',
-  "Lenguaje": 'REACT',
-  "TextoCard": 'Landing page para clases de Ingles creado con Parcel y React',
-  "Link": 'https://ja54312.github.io/Marco-s-class/',
   "ButtonText": 'Ir a la web'
 }];
 var _default = ProyectosDetacados;
@@ -30096,6 +30096,14 @@ var MasProyectosAux = [{
   "Link": 'https://ja54312.github.io/GOOGLE-CLONE/',
   "ButtonText": 'Ir a la web'
 }, {
+  "Img": 'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
+  "AltImg": 'imagen de marcosclass',
+  "Title": 'Marcos Class',
+  "Lenguaje": 'REACT',
+  "TextoCard": 'Landing page para clases de Ingles creado con Parcel y React',
+  "Link": 'https://ja54312.github.io/Marco-s-class/',
+  "ButtonText": 'Ir a la web'
+}, {
   "Img": 'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
   "AltImg": 'imagen de mi blog',
   "Title": 'Mi Blog',
@@ -30183,9 +30191,9 @@ var SobreMi = function SobreMi() {
     className: "text-sobre-mi"
   }, "Sobre mi"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h4", {
     className: "text-sobre-mi"
-  }, "Soy Jose Antonio tengo 31 a\xF1os,soy Ing.Aeronautico,estudio Ing en Energias Renovables y Me encanta el Desarrollo Web."), /*#__PURE__*/_react.default.createElement("h4", {
+  }, "Soy Jose Antonio tengo 31 a\xF1os,soy Ing.Aeronautico y Me encanta el Desarrollo Web."), /*#__PURE__*/_react.default.createElement("h4", {
     className: "text-sobre-mi"
-  }, "Tambi\xE9n Soy un Podcaster Amateur Y Gamer. Actualmente tengo conocimiento b\xE1sico de React y me encuentro mejorando mi conocimiento del mismo. Actualmente trabajo en una agencia de e-comerce como Desarrollador Front-end."), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Tambi\xE9n Soy Gamer. Actualmente tengo conocimiento de React,Typescript,NextJs,NodeJs,Express,Docker y me encuentro mejorando mi conocimiento del mismo. Actualmente trabajo en una agencia de e-comerce como Desarrollador Front-end."), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-info-aboutme"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "info-aboutme"
@@ -30390,15 +30398,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35419" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36835" + '/');
->>>>>>> DEVELOPMENT
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34375" + '/');
->>>>>>> DEVELOPMENT
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46043" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

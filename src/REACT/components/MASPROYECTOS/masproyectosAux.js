@@ -27,6 +27,15 @@ const MasProyectosAux = [
         "ButtonText":'Ir a la web'
     },
     {
+        "Img":'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
+        "AltImg":'imagen de marcosclass', 
+        "Title":'Marcos Class',
+        "Lenguaje":'REACT',
+        "TextoCard":'Landing page para clases de Ingles creado con Parcel y React',
+        "Link":'https://ja54312.github.io/Marco-s-class/',
+        "ButtonText":'Ir a la web'
+    },
+    {
         "Img":'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
         "AltImg":'imagen de mi blog', 
         "Title":'Mi Blog',

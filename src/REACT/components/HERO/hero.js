@@ -1,13 +1,16 @@
 import React from "react";
-import './hero.css'
+import "./hero.css";
 const Hero = () => {
-    return(
-        <>  
-            <section className="container-hero">
-                <p>Front-End Developer con 2 años de experiencia con JavaScript  y ReactJs . Actualmente me encuentro en búsqueda de nuevos desafíos que me permitan crecer profesionalmente y convertirme en Full Stack. En búsqueda de un trabajo remoto que me permita perfeccionar ReactJs.</p>
-            </section>
-        </>
-    )
-}
+  return (
+    <>
+      <section className="container-hero">
+        <p>
+          Full Stack Developer con 2 años de experiencia,con mayor dominio de Front-End.
+          En Busca de nuevos desafios y seguir perfeccionandome como desarrollador.
+        </p>
+      </section>
+    </>
+  );
+};
 
-export default Hero
+export default Hero;

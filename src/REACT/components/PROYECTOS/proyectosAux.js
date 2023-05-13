@@ -1,5 +1,14 @@
 const ProyectosDetacados = [
     {
+        "Img": 'https://i.postimg.cc/0yxTZ71J/Airbnb-Clone-png.png',
+        "AltImg":'imagen de airbnb clone', 
+        "Title":'Airbnbn Clone',
+        "Lenguaje":'NEXT JS',
+        "TextoCard":'Un clon con funcionalidad de airbnb,hecho en NextJs con Typescripy,MongoDB y Prisma',
+        "Link":'https://cloneairbnb-eta.vercel.app/',
+        "ButtonText":'Ir a la web'
+    },
+    {
         "Img": 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
         "AltImg":'imagen de simon dice', 
         "Title":'SIMON DICE',
@@ -24,15 +33,6 @@ const ProyectosDetacados = [
         "Lenguaje":'HTML-CSS',
         "TextoCard":'Creación de pagina Batatabit basado en diesño de FIGMA.Creado con metodologia Mobile First',
         "Link":'https://ja54312.github.io/MOBILE_FIRST/',
-        "ButtonText":'Ir a la web'
-    },
-    {
-        "Img":'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
-        "AltImg":'imagen de marcosclass', 
-        "Title":'Marcos Class',
-        "Lenguaje":'REACT',
-        "TextoCard":'Landing page para clases de Ingles creado con Parcel y React',
-        "Link":'https://ja54312.github.io/Marco-s-class/',
         "ButtonText":'Ir a la web'
     }
 ]

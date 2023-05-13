@@ -12,12 +12,11 @@ const SobreMi = () => {
                 <h2 className="text-sobre-mi">Sobre mi</h2>
                 <br/>
                 <h4 className="text-sobre-mi">
-                    Soy Jose Antonio tengo 31 años,soy Ing.Aeronautico,estudio Ing en Energias Renovables
+                    Soy Jose Antonio tengo 31 años,soy Ing.Aeronautico
                     y Me encanta el Desarrollo Web.
                 </h4>
                 <h4 className="text-sobre-mi">
-                    También Soy un Podcaster Amateur
-                    Y Gamer. Actualmente tengo conocimiento básico de React y me encuentro mejorando mi conocimiento del mismo.
+                    También Soy Gamer. Actualmente tengo conocimiento de React,Typescript,NextJs,NodeJs,Express,Docker y me encuentro mejorando mi conocimiento del mismo.
                     Actualmente trabajo en una agencia de e-comerce como Desarrollador Front-end.
                 </h4>
                 <br/>
