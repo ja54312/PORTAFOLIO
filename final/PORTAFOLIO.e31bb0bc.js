@@ -29700,7 +29700,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Hero = function Hero() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
     className: "container-hero"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Full Stack Developer con 2 a\xF1os de experiencia,con mayor dominio de Front-End. En Busca de nuevos desafios y seguir perfeccionandome como desarrollador.")));
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Full Stack Developer con 3 a\xF1os de experiencia,con mayor dominio de Front-End. En Busca de nuevos desafios y seguir perfeccionandome como desarrollador.")));
 };
 
 var _default = Hero;
@@ -29713,37 +29713,37 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var ProyectosDetacados = [{
-  "Img": 'https://i.postimg.cc/0yxTZ71J/Airbnb-Clone-png.png',
-  "AltImg": 'imagen de airbnb clone',
-  "Title": 'Airbnbn Clone',
-  "Lenguaje": 'NEXT JS',
-  "TextoCard": 'Un clon con funcionalidad de airbnb,hecho en NextJs con Typescripy,MongoDB y Prisma',
-  "Link": 'https://cloneairbnb-eta.vercel.app/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/0yxTZ71J/Airbnb-Clone-png.png",
+  AltImg: "imagen de airbnb clone",
+  Title: "Airbnbn Clone",
+  Lenguaje: "NEXT-JS",
+  TextoCard: "Un clon con funcionalidad de airbnb,hecho en NextJs con Typescripy,MongoDB y Prisma",
+  Link: "https://cloneairbnb-eta.vercel.app/",
+  ButtonText: "Ir a la web"
 }, {
-  "Img": 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
-  "AltImg": 'imagen de simon dice',
-  "Title": 'SIMON DICE',
-  "Lenguaje": 'JS',
-  "TextoCard": 'Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??',
-  "Link": 'https://ja54312.github.io/SIMON_DICE/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png",
+  AltImg: "imagen de simon dice",
+  Title: "SIMON DICE",
+  Lenguaje: "JS",
+  TextoCard: "Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??",
+  Link: "https://ja54312.github.io/SIMON_DICE/",
+  ButtonText: "Ir a la web"
 }, {
-  "Img": 'https://i.postimg.cc/28P6g71J/APP-NOTES.png',
-  "AltImg": 'imagen de app notes',
-  "Title": 'APP NOTES',
-  "Lenguaje": 'REACT',
-  "TextoCard": 'App To-DO creada en react con el uso de useState y useEffect.Guardando tus tareas en el localStorage',
-  "Link": 'https://ja54312.github.io/APP_NOTES/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/28P6g71J/APP-NOTES.png",
+  AltImg: "imagen de app notes",
+  Title: "APP NOTES",
+  Lenguaje: "REACT",
+  TextoCard: "App To-DO creada en react con el uso de useState y useEffect.Guardando tus tareas en el localStorage",
+  Link: "https://ja54312.github.io/APP_NOTES/",
+  ButtonText: "Ir a la web"
 }, {
-  "Img": 'https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png',
-  "AltImg": 'imagen de batatabit',
-  "Title": 'BATATABIT',
-  "Lenguaje": 'HTML-CSS',
-  "TextoCard": 'Creación de pagina Batatabit basado en diesño de FIGMA.Creado con metodologia Mobile First',
-  "Link": 'https://ja54312.github.io/MOBILE_FIRST/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/Gpst8hzQ/Eternology.png",
+  AltImg: "imagen de eternology",
+  Title: "ETERNLOGY",
+  Lenguaje: "WORDPRESS",
+  TextoCard: "Creación de pagina para negocio de bebidas,en la plataforma Wordpress con codigo customisado",
+  Link: "https://eternology.com.mx/",
+  ButtonText: "Ir a la web"
 }];
 var _default = ProyectosDetacados;
 exports.default = _default;
@@ -29816,11 +29816,11 @@ require("./badge.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //Estructura de componente <Badge lenguaje='string'/>
-//LENGUAJES PERIMITIDOS {JS,HTML-CSS,REAC,Bootstrap,CLONE} 
+//LENGUAJES PERIMITIDOS {JS,HTML-CSS,REAC,Bootstrap,CLONE,Bootstrap,NEXT JS,WORDPRESS}
 var Badge = function Badge(_ref) {
   var lenguaje = _ref.lenguaje;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("span", {
-    className: 'badge ' + lenguaje
+    className: "badge " + lenguaje
   }, lenguaje));
 };
 
@@ -30072,45 +30072,53 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var MasProyectosAux = [{
-  "Img": 'https://i.postimg.cc/qMHjsf7t/Bootstrap-Conferencia.png',
-  "AltImg": 'imagen de conferencia',
-  "Title": 'Conferencia',
-  "Lenguaje": 'Bootstrap',
-  "TextoCard": 'Una simulacion de una pagina para anunciar una conferencia y compra de tickets',
-  "Link": 'https://ja54312.github.io/Bootstrap_Conferencia/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/qMHjsf7t/Bootstrap-Conferencia.png",
+  AltImg: "imagen de conferencia",
+  Title: "Conferencia",
+  Lenguaje: "Bootstrap",
+  TextoCard: "Una simulacion de una pagina para anunciar una conferencia y compra de tickets",
+  Link: "https://ja54312.github.io/Bootstrap_Conferencia/",
+  ButtonText: "Ir a la web"
 }, {
-  "Img": 'https://i.postimg.cc/MGLYXN4p/E-SHOPP-DRACO.png',
-  "AltImg": 'imagen de e shop draco',
-  "Title": 'E-Comerce',
-  "Lenguaje": 'HTML-CSS',
-  "TextoCard": 'E-Comerce ficticio que vende huevos de Dragon',
-  "Link": 'https://ja54312.github.io/E-SHOPP-DRACO/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/MGLYXN4p/E-SHOPP-DRACO.png",
+  AltImg: "imagen de e shop draco",
+  Title: "E-Comerce",
+  Lenguaje: "HTML-CSS",
+  TextoCard: "E-Comerce ficticio que vende huevos de Dragon",
+  Link: "https://ja54312.github.io/E-SHOPP-DRACO/",
+  ButtonText: "Ir a la web"
 }, {
-  "Img": 'https://i.postimg.cc/ZntFx3Jk/GOOGLE-CLONE.png',
-  "AltImg": 'imagen de google clone',
-  "Title": 'GOOGLE-Clone',
-  "Lenguaje": 'CLONE',
-  "TextoCard": 'Una copia Front de la pagina del buscador GOOGLE',
-  "Link": 'https://ja54312.github.io/GOOGLE-CLONE/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/ZntFx3Jk/GOOGLE-CLONE.png",
+  AltImg: "imagen de google clone",
+  Title: "GOOGLE-Clone",
+  Lenguaje: "CLONE",
+  TextoCard: "Una copia Front de la pagina del buscador GOOGLE",
+  Link: "https://ja54312.github.io/GOOGLE-CLONE/",
+  ButtonText: "Ir a la web"
 }, {
-  "Img": 'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
-  "AltImg": 'imagen de marcosclass',
-  "Title": 'Marcos Class',
-  "Lenguaje": 'REACT',
-  "TextoCard": 'Landing page para clases de Ingles creado con Parcel y React',
-  "Link": 'https://ja54312.github.io/Marco-s-class/',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png",
+  AltImg: "imagen de marcosclass",
+  Title: "Marcos Class",
+  Lenguaje: "REACT",
+  TextoCard: "Landing page para clases de Ingles creado con Parcel y React",
+  Link: "https://ja54312.github.io/Marco-s-class/",
+  ButtonText: "Ir a la web"
 }, {
-  "Img": 'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
-  "AltImg": 'imagen de mi blog',
-  "Title": 'Mi Blog',
-  "Lenguaje": 'HTML-CSS',
-  "TextoCard": 'Pagina tipo Blog',
-  "Link": 'https://ja54312.github.io/Mi_Blog/index.html',
-  "ButtonText": 'Ir a la web'
+  Img: "https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png",
+  AltImg: "imagen de mi blog",
+  Title: "Mi Blog",
+  Lenguaje: "HTML-CSS",
+  TextoCard: "Pagina tipo Blog",
+  Link: "https://ja54312.github.io/Mi_Blog/index.html",
+  ButtonText: "Ir a la web"
+}, {
+  Img: "https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png",
+  AltImg: "imagen de batatabit",
+  Title: "BATATABIT",
+  Lenguaje: "HTML-CSS",
+  TextoCard: "Creación de pagina Batatabit basado en diesño de FIGMA.Creado con metodologia Mobile First",
+  Link: "https://ja54312.github.io/MOBILE_FIRST/",
+  ButtonText: "Ir a la web"
 }];
 var _default = MasProyectosAux;
 exports.default = _default;
@@ -30191,7 +30199,7 @@ var SobreMi = function SobreMi() {
     className: "text-sobre-mi"
   }, "Sobre mi"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h4", {
     className: "text-sobre-mi"
-  }, "Soy Jose Antonio tengo 31 a\xF1os,soy Ing.Aeronautico y Me encanta el Desarrollo Web."), /*#__PURE__*/_react.default.createElement("h4", {
+  }, "Soy Jose Antonio tengo 32 a\xF1os,soy Ing.Aeronautico y Me apasiona el Desarrollo Web."), /*#__PURE__*/_react.default.createElement("h4", {
     className: "text-sobre-mi"
   }, "Tambi\xE9n Soy Gamer. Actualmente tengo conocimiento de React,Typescript,NextJs,NodeJs,Express,Docker y me encuentro mejorando mi conocimiento del mismo. Actualmente trabajo en una agencia de e-comerce como Desarrollador Front-end."), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-info-aboutme"
@@ -30398,7 +30406,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46043" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43335" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,19 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import './badge.css'
+import "./badge.css";
 
 //Estructura de componente <Badge lenguaje='string'/>
-//LENGUAJES PERIMITIDOS {JS,HTML-CSS,REAC,Bootstrap,CLONE} 
+//LENGUAJES PERIMITIDOS {JS,HTML-CSS,REAC,Bootstrap,CLONE,Bootstrap,NEXT JS,WORDPRESS}
 
-const Badge = ({lenguaje}) => {
+const Badge = ({ lenguaje }) => {
+  return (
+    <>
+      <span className={"badge " + lenguaje}>{lenguaje}</span>
+    </>
+  );
+};
 
-
-    return(
-        <>
-            <span className={'badge '+ lenguaje}>{lenguaje}</span>
-        </>
-    )
-
-}
-
-export default Badge
+export default Badge;

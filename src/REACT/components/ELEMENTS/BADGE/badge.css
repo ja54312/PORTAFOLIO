@@ -1,5 +1,5 @@
 /*BADGE*/
-.badge{
+.badge {
     display: inline-block;
     padding: 0.35em 0.65em;
     font-size: .75em;
@@ -10,20 +10,33 @@
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 0.25rem;
-} 
+}
+
 /*LENGUAJES*/
-.HTML-CSS{
+.HTML-CSS {
     background-color: #6c757d;
 }
-.JS{
+
+.JS {
     background-color: #ffc107;
 }
-.REACT{
+
+.REACT {
     background-color: #198754;
 }
-.Bootstrap{
+
+.Bootstrap {
     background-color: #0dcaf0;
 }
-.CLONE{
+
+.CLONE {
     background-color: #212529;
+}
+
+.NEXT-JS {
+    background-color: #0f6cca;
+}
+
+.WORDPRESS {
+    background-color: #043174;
 }
