@@ -46,6 +46,16 @@ const MasProyectosAux = [
     ButtonText: "Ir a la web",
   },
   {
+    Img: "https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png",
+    AltImg: "imagen de simon dice",
+    Title: "SIMON DICE",
+    Lenguaje: "JS",
+    TextoCard:
+      "Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??",
+    Link: "https://ja54312.github.io/SIMON_DICE/",
+    ButtonText: "Ir a la web",
+  },
+  {
     Img: "https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png",
     AltImg: "imagen de batatabit",
     Title: "BATATABIT",

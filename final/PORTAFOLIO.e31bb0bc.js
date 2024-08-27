@@ -29717,24 +29717,16 @@ var ProyectosDetacados = [{
   AltImg: "imagen de airbnb clone",
   Title: "Airbnbn Clone",
   Lenguaje: "NEXT-JS",
-  TextoCard: "Un clon con funcionalidad de airbnb,hecho en NextJs con Typescripy,MongoDB y Prisma",
+  TextoCard: "Un clon con funcionalidad de airbnb,hecho en NextJs con Typescript,MongoDB y Prisma",
   Link: "https://cloneairbnb-eta.vercel.app/",
   ButtonText: "Ir a la web"
 }, {
-  Img: "https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png",
-  AltImg: "imagen de simon dice",
-  Title: "SIMON DICE",
-  Lenguaje: "JS",
-  TextoCard: "Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??",
-  Link: "https://ja54312.github.io/SIMON_DICE/",
-  ButtonText: "Ir a la web"
-}, {
-  Img: "https://i.postimg.cc/28P6g71J/APP-NOTES.png",
-  AltImg: "imagen de app notes",
-  Title: "APP NOTES",
-  Lenguaje: "REACT",
-  TextoCard: "App To-DO creada en react con el uso de useState y useEffect.Guardando tus tareas en el localStorage",
-  Link: "https://ja54312.github.io/APP_NOTES/",
+  Img: "https://i.postimg.cc/R000FLdQ/www-tmhlogistica-com.png",
+  AltImg: "imagen de Tmh Logistica",
+  Title: "TMH LOGISTICA",
+  Lenguaje: "NEXT-JS",
+  TextoCard: "Landign page para empresa de logistica,hecho en NextJs con Typescript",
+  Link: "https://www.tmhlogistica.com/",
   ButtonText: "Ir a la web"
 }, {
   Img: "https://i.postimg.cc/Gpst8hzQ/Eternology.png",
@@ -29743,6 +29735,14 @@ var ProyectosDetacados = [{
   Lenguaje: "WORDPRESS",
   TextoCard: "Creación de pagina para negocio de bebidas,en la plataforma Wordpress con codigo customisado",
   Link: "https://eternology.com.mx/",
+  ButtonText: "Ir a la web"
+}, {
+  Img: "https://i.postimg.cc/28P6g71J/APP-NOTES.png",
+  AltImg: "imagen de app notes",
+  Title: "APP NOTES",
+  Lenguaje: "REACT",
+  TextoCard: "App To-DO creada en react con el uso de useState y useEffect.Guardando tus tareas en el localStorage",
+  Link: "https://ja54312.github.io/APP_NOTES/",
   ButtonText: "Ir a la web"
 }];
 var _default = ProyectosDetacados;
@@ -30112,6 +30112,14 @@ var MasProyectosAux = [{
   Link: "https://ja54312.github.io/Mi_Blog/index.html",
   ButtonText: "Ir a la web"
 }, {
+  Img: "https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png",
+  AltImg: "imagen de simon dice",
+  Title: "SIMON DICE",
+  Lenguaje: "JS",
+  TextoCard: "Juego de seguir la cadena de colores,De 3 niveles podras lograrlo??",
+  Link: "https://ja54312.github.io/SIMON_DICE/",
+  ButtonText: "Ir a la web"
+}, {
   Img: "https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png",
   AltImg: "imagen de batatabit",
   Title: "BATATABIT",
@@ -30199,7 +30207,7 @@ var SobreMi = function SobreMi() {
     className: "text-sobre-mi"
   }, "Sobre mi"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h4", {
     className: "text-sobre-mi"
-  }, "Soy Jose Antonio tengo 32 a\xF1os,soy Ing.Aeronautico y Me apasiona el Desarrollo Web."), /*#__PURE__*/_react.default.createElement("h4", {
+  }, "Soy Jose Antonio tengo 33 a\xF1os,soy Ing.Aeronautico y Me apasiona el Desarrollo Web."), /*#__PURE__*/_react.default.createElement("h4", {
     className: "text-sobre-mi"
   }, "Tambi\xE9n Soy Gamer. Actualmente tengo conocimiento de React,Typescript,NextJs,NodeJs,Express,Docker y me encuentro mejorando mi conocimiento del mismo. Actualmente trabajo en una agencia de e-comerce como Desarrollador Front-end."), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-info-aboutme"
@@ -30406,7 +30414,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43335" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43363" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
