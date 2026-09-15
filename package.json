@@ -1,37 +1,38 @@
 {
-    "name": "ja54312",
-    "version": "1.0.0",
-    "description": "ja54312",
-    "main": "index.html",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "parcel --no-source-maps --out-dir ./final index.html",
-      "build": "npx parcel build --out-dir ./prod --public-url https://ja54312.github.io/PORTAFOLIO/ --no-source-maps  index.html",
-      "deploy": "gh-pages -d prod"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "node-sass": "^7.0.1",
-      "react": "^17.0.2",
-      "react-dom": "^17.0.2"
-    },
-    "devDependencies": {
-      "@babel/core": "^7.15.0",
-      "@babel/preset-env": "^7.14.8",
-      "@babel/preset-react": "^7.14.5",
-      "babel-preset-env": "^1.7.0",
-      "babel-preset-react": "^6.24.1",
-      "gh-pages": "^3.2.3",
-      "parcel-bundler": "^1.12.5"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/ja54312/PORTAFOLIO.git"
-    },
-    "bugs": {
-      "url": "https://github.com/ja54312/PORTAFOLIO/issues"
-    },
-    "homepage": "https://github.com/ja54312/PORTAFOLIO#readme"
-  }
-  
+  "name": "portafolio-ja54312",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Portafolio personal de Jose Antonio Alatorre Chavez",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "^16.3.5",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ja54312/PORTAFOLIO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ja54312/PORTAFOLIO/issues"
+  },
+  "homepage": "https://github.com/ja54312/PORTAFOLIO#readme"
+}

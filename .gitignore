@@ -1,3 +1,31 @@
-node_modules
-text.txt
+# dependencias
+/node_modules
+.pnp
+.pnp.*
+
+# build de Next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# entorno
+.env
+.env.*
+!.env.example
+
+# despliegue / AWS Amplify
+.amplify-hosting/
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+aws-exports.js
+
+# varios
+.DS_Store
+*.pem
+.vercel
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .cache
+text.txt

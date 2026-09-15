@@ -1,0 +1,25 @@
+.seccion {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.titulo {
+  margin-left: 25px;
+}
+
+/* Este contenedor si envuelve, a diferencia del de "Proyectos destacados".
+   Antes ambos compartian la clase global `.container-cards` y una sobrescribia
+   a la otra segun el orden de importacion. */
+.contenedorTarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .titulo {
+    text-align: center;
+  }
+}
