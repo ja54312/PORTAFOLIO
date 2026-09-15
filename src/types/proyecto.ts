@@ -2,7 +2,15 @@
  * Lenguajes/tecnologias que puede mostrar un <Badge/>.
  * Cada valor tiene una clase de color asociada en `elements/badge.module.css`.
  */
-export const LENGUAJES = ['JS', 'REACT', 'HTML-CSS', 'Bootstrap', 'CLONE'] as const
+export const LENGUAJES = [
+  'JS',
+  'REACT',
+  'NEXT-JS',
+  'HTML-CSS',
+  'Bootstrap',
+  'WORDPRESS',
+  'CLONE',
+] as const
 
 export type Lenguaje = (typeof LENGUAJES)[number]
 

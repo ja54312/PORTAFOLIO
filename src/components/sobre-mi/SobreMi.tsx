@@ -19,12 +19,13 @@ export default function SobreMi() {
         Sobre mí
       </h2>
       <p className={styles.texto}>
-        Soy José Antonio, tengo {edad} años, soy Ing. Aeronáutico, estudio Ing. en Energías
-        Renovables y me encanta el desarrollo web.
+        Soy José Antonio, tengo {edad} años, soy Ing. Aeronáutico y me apasiona el
+        desarrollo web.
       </p>
       <p className={styles.texto}>
-        También soy un podcaster amateur y gamer. Actualmente trabajo en una agencia de
-        e-commerce como desarrollador Front-End, mejorando mi conocimiento de React.
+        También soy gamer. Actualmente tengo conocimiento de React, TypeScript, Next.js,
+        Node.js, Express y Docker, y sigo mejorándolo. Trabajo en una agencia de e-commerce
+        como desarrollador Front-End.
       </p>
       <ul className={styles.intereses}>
         {INTERESES.map((interes) => (

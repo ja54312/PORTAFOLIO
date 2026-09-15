@@ -1,6 +1,7 @@
 # Portafolio · JA54312
 
-Portafolio personal de **José Antonio Alatorre Chávez**, desarrollador Front-End.
+Portafolio personal de **José Antonio Alatorre Chávez**, desarrollador Full Stack
+con mayor dominio de Front-End.
 
 Construido con **Next.js 16 (App Router) + TypeScript + React 19**, exportado como
 sitio estático y desplegado en **AWS Amplify Hosting**.
@@ -65,7 +66,8 @@ restringido a los valores que tienen color de badge definido.
   img: 'https://i.postimg.cc/.../captura.png',
   altImg: 'Captura de …',
   titulo: 'MI PROYECTO',
-  lenguaje: 'REACT',           // JS | REACT | HTML-CSS | Bootstrap | CLONE
+  lenguaje: 'NEXT-JS',         // JS | REACT | NEXT-JS | HTML-CSS
+                               // Bootstrap | WORDPRESS | CLONE
   descripcion: '…',
   link: 'https://…',
   textoBoton: 'Ir a la web',

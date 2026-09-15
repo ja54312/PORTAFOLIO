@@ -18,10 +18,10 @@ const roboto = Roboto({
 })
 
 const DESCRIPCION =
-  'Soy José Antonio Alatorre Chávez, desarrollador Front-End. Este es mi portafolio de trabajos. Trabajemos juntos =)'
+  'Soy José Antonio Alatorre Chávez, desarrollador Full Stack con mayor dominio de Front-End. Este es mi portafolio de trabajos. Trabajemos juntos =)'
 
 export const metadata: Metadata = {
-  title: `${PERFIL.alias} | Front-End Developer`,
+  title: `${PERFIL.alias} | Full Stack Developer`,
   description: DESCRIPCION,
   authors: [{ name: PERFIL.nombre, url: PERFIL.redes.github }],
   creator: PERFIL.nombre,
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_MX',
-    title: `${PERFIL.alias} | Front-End Developer`,
+    title: `${PERFIL.alias} | Full Stack Developer`,
     description: DESCRIPCION,
     siteName: PERFIL.alias,
   },
   twitter: {
     card: 'summary',
-    title: `${PERFIL.alias} | Front-End Developer`,
+    title: `${PERFIL.alias} | Full Stack Developer`,
     description: DESCRIPCION,
     creator: '@JA54312',
   },
