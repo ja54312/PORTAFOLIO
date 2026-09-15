@@ -6,6 +6,12 @@ import SobreMi from '@/components/sobre-mi/SobreMi'
 import Contacto from '@/components/contacto/Contacto'
 import Footer from '@/components/footer/Footer'
 
+/*
+ * La edad de "Sobre mi" se calcula con la fecha actual. Revalidar una vez al dia
+ * mantiene el dato al dia sin necesidad de volver a desplegar.
+ */
+export const revalidate = 86400
+
 export default function Home() {
   return (
     <>
