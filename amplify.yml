@@ -15,11 +15,9 @@ frontend:
         - npm run lint
         - npm run build
   artifacts:
-    # Modo SSR (Amplify Hosting compute). Amplify detecta Next.js y despliega
-    # el adaptador de compute a partir de .next. Para cambiar a sitio estatico:
-    # anadir `output: 'export'` + `images.unoptimized` en next.config.ts y
-    # apuntar baseDirectory a `out`.
-    baseDirectory: .next
+    # Sitio estatico: `output: 'export'` en next.config.ts genera `out/`.
+    # Amplify lo sirve desde el CDN, sin aprovisionar compute.
+    baseDirectory: out
     files:
       - '**/*'
   cache:
