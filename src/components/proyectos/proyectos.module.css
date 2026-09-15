@@ -1,0 +1,21 @@
+.seccion {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.titulo {
+  margin-left: 25px;
+}
+
+.contenedorTarjetas {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .titulo {
+    text-align: center;
+  }
+}

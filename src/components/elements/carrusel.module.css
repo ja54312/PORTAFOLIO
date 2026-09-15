@@ -1,0 +1,86 @@
+.carrusel {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.ventana {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  border: none;
+}
+
+.pista {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: transform 0.5s ease;
+}
+
+.elemento {
+  flex: 0 0 auto;
+  /* Ancho de reserva hasta que el ResizeObserver mide el contenedor. */
+  width: 100%;
+}
+
+.flechaBoton {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transform: translateY(-50%);
+}
+
+.flechaBoton:focus-visible {
+  outline: 2px solid var(--color-header);
+  outline-offset: 4px;
+  border-radius: 0.25rem;
+}
+
+.izquierda {
+  left: 0;
+}
+
+.derecha {
+  right: 0;
+}
+
+.flecha {
+  width: 30px;
+  height: 30px;
+}
+
+.flechaInvertida {
+  transform: rotate(-180deg);
+}
+
+@media screen and (min-width: 820px) {
+  .carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ventana {
+    width: 89%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ventana {
+    width: 80%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pista {
+    transition: none;
+  }
+}

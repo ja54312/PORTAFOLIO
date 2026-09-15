@@ -1,0 +1,43 @@
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+/* Un color por lenguaje. Las claves coinciden con el tipo `Lenguaje`. */
+.JS {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.REACT {
+  background-color: #198754;
+}
+
+.HTML-CSS {
+  background-color: #6c757d;
+}
+
+.Bootstrap {
+  background-color: #0dcaf0;
+  color: #212529;
+}
+
+.NEXT-JS {
+  background-color: #0f6cca;
+}
+
+.WORDPRESS {
+  background-color: #043174;
+}
+
+.CLONE {
+  background-color: #212529;
+}
