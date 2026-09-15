@@ -10,7 +10,9 @@ frontend:
         - npm ci
     build:
       commands:
-        # Un fallo de tipos o de lint detiene el despliegue.
+        # Un fallo de tipos o de lint detiene el despliegue. `typecheck` ejecuta
+        # `next typegen` primero porque next-env.d.ts esta en .gitignore y no
+        # existe en un clon limpio como el que usa Amplify.
         - npm run typecheck
         - npm run lint
         - npm run build
