@@ -3,8 +3,8 @@
 Portafolio personal de **José Antonio Alatorre Chávez**, desarrollador Full Stack
 con mayor dominio de Front-End.
 
-Construido con **Next.js 16 (App Router) + TypeScript + React 19**, exportado como
-sitio estático y desplegado en **AWS Amplify Hosting**.
+Construido con **Next.js 16 (App Router) + TypeScript + React 19**, desplegado en
+**AWS Amplify Hosting**.
 
 > Versión 4.0 — migración desde la v3.0, que usaba Parcel 1 + React 17 y se
 > publicaba en GitHub Pages.
@@ -39,7 +39,7 @@ npm run dev      # http://localhost:3000
 src/
 ├── app/                  # App Router: layout, página e icono
 │   ├── layout.tsx        # metadata, next/font, estilos globales
-│   ├── page.tsx          # composición de secciones
+│   ├── page.tsx          # composición de secciones (revalidate: 1 día)
 │   ├── globals.css       # reset + variables CSS
 │   └── icon.png          # favicon
 ├── components/           # una carpeta por sección, con su módulo CSS
@@ -74,43 +74,47 @@ restringido a los valores que tienen color de badge definido.
 }
 ```
 
-Las capturas se sirven desde `i.postimg.cc`. En exportación estática no se
-ejecuta el optimizador de `next/image`, así que las imágenes se cargan tal cual
-desde su origen; conviene subirlas ya redimensionadas.
+Las capturas se sirven desde `i.postimg.cc`, dominio autorizado en
+`next.config.ts` (`images.remotePatterns`). Para usar otro host hay que
+añadirlo ahí.
 
 ## Despliegue en AWS Amplify
-
-El sitio se exporta como HTML estático (`output: 'export'` en `next.config.ts`)
-a la carpeta `out/`, que Amplify sirve desde el CDN **sin aprovisionar compute**.
 
 El repositorio incluye `amplify.yml`. En la consola de Amplify:
 
 1. **Host web app** → conecta el repositorio de GitHub y la rama.
-2. Amplify lee `amplify.yml`; no hace falta tocar la configuración del build.
+2. Amplify detecta Next.js, registra la app con plataforma `WEB_COMPUTE` y
+   despliega el adaptador de compute desde `.next`.
 3. No hacen falta variables de entorno.
 
 El build ejecuta `typecheck`, `lint` y `build`, así que un error de tipos o de
 lint detiene el despliegue.
 
-> Si Amplify detecta Next.js y propone el adaptador SSR, elige el build estático:
-> `baseDirectory` debe apuntar a `out`.
+La página se pregenera como HTML estático en el build y se revalida cada 24 h,
+de modo que la edad de «Sobre mí» se mantiene al día sin volver a desplegar.
 
-### Reconstrucción periódica (opcional)
+### Si alguna vez quieres servirlo como estático puro
 
-La edad de «Sobre mí» se calcula en el momento del build, así que puede ir un año
-por detrás hasta el siguiente despliegue. Para que se corrija sola, crea un
-**incoming webhook** en Amplify (*App settings → Build settings → Incoming
-webhooks*) y llámalo una vez al mes desde EventBridge Scheduler o cron.
+El sitio no tiene nada dinámico, así que puede servirse desde el CDN sin compute
+facturable. Son **tres** cambios, y el tercero es el que se olvida:
 
-### Volver a SSR
+1. En `next.config.ts`, añade `output: 'export'` e `images: { unoptimized: true }`.
+2. En `amplify.yml`, cambia `baseDirectory: .next` por `out`.
+3. **Cambia la plataforma de la app a `WEB`**, que no se controla desde
+   `amplify.yml` sino con la API:
 
-Si más adelante añades algo dinámico (formulario de contacto, blog, rutas API):
+   ```bash
+   aws amplify update-app --app-id <id> --platform WEB --region <region>
+   ```
 
-1. En `next.config.ts`, quita `output: 'export'` y `images.unoptimized`.
-2. En `amplify.yml`, cambia `baseDirectory: out` por `.next`.
+Sin el paso 3 el build pasa pero el deploy falla con:
 
-`images.remotePatterns` ya está configurado para `i.postimg.cc`, así que la
-optimización de imágenes vuelve a funcionar sin más cambios.
+```
+CustomerError: Can't find required-server-files.json in build output directory
+```
+
+porque Amplify sigue esperando el artefacto de servidor. Recrear la app no lo
+arregla: al detectar Next.js vuelve a asignar `WEB_COMPUTE`.
 
 ## Notas de la migración v3 → v4
 

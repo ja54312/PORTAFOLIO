@@ -17,9 +17,9 @@ frontend:
         - npm run lint
         - npm run build
   artifacts:
-    # Sitio estatico: `output: 'export'` en next.config.ts genera `out/`.
-    # Amplify lo sirve desde el CDN, sin aprovisionar compute.
-    baseDirectory: out
+    # Modo SSR (plataforma WEB_COMPUTE). Amplify toma de `.next` el adaptador de
+    # compute, incluido required-server-files.json.
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
