@@ -4,7 +4,10 @@ Portafolio personal de **José Antonio Alatorre Chávez**, desarrollador Full St
 con mayor dominio de Front-End.
 
 Construido con **Next.js 16 (App Router) + TypeScript + React 19**, desplegado en
-**AWS Amplify Hosting**.
+**AWS Amplify Hosting** y publicado en **https://ja54312.com**.
+
+> La configuración de infraestructura (DNS en Cloudflare, certificado, errores
+> conocidos del despliegue) está documentada en **[DESPLIEGUE.md](DESPLIEGUE.md)**.
 
 > Versión 4.0 — migración desde la v3.0, que usaba Parcel 1 + React 17 y se
 > publicaba en GitHub Pages.
