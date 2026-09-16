@@ -1,9 +1,16 @@
+import batatabit from '@/assets/capturas/batatabit.webp'
+import conferencia from '@/assets/capturas/conferencia.webp'
+import eCommerce from '@/assets/capturas/e-commerce.webp'
+import googleClone from '@/assets/capturas/google-clone.webp'
+import marcosClass from '@/assets/capturas/marcos-class.webp'
+import miBlog from '@/assets/capturas/mi-blog.webp'
+import simonDice from '@/assets/capturas/simon-dice.webp'
 import type { Proyecto } from '@/types/proyecto'
 
 /** Proyectos secundarios que se muestran en el segundo carrusel. */
 export const MAS_PROYECTOS: readonly Proyecto[] = [
   {
-    img: 'https://i.postimg.cc/qMHjsf7t/Bootstrap-Conferencia.png',
+    img: conferencia,
     altImg: 'Captura de la página de la conferencia',
     titulo: 'Conferencia',
     lenguaje: 'Bootstrap',
@@ -13,7 +20,7 @@ export const MAS_PROYECTOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/MGLYXN4p/E-SHOPP-DRACO.png',
+    img: eCommerce,
     altImg: 'Captura de la tienda E-Shopp Draco',
     titulo: 'E-Commerce',
     lenguaje: 'HTML-CSS',
@@ -22,7 +29,7 @@ export const MAS_PROYECTOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/ZntFx3Jk/GOOGLE-CLONE.png',
+    img: googleClone,
     altImg: 'Captura del clon de Google',
     titulo: 'GOOGLE-Clone',
     lenguaje: 'CLONE',
@@ -31,7 +38,7 @@ export const MAS_PROYECTOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/027XFk4d/marcosclasee-screenshot.png',
+    img: marcosClass,
     altImg: "Captura de la landing page Marco's Class",
     titulo: "Marco's Class",
     lenguaje: 'REACT',
@@ -40,7 +47,7 @@ export const MAS_PROYECTOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/QN1qx6qj/Mi-Blog-index-html.png',
+    img: miBlog,
     altImg: 'Captura de Mi Blog',
     titulo: 'Mi Blog',
     lenguaje: 'HTML-CSS',
@@ -49,7 +56,7 @@ export const MAS_PROYECTOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/mgNqzLN2/SIMON-DICE.png',
+    img: simonDice,
     altImg: 'Captura del juego Simón Dice',
     titulo: 'SIMON DICE',
     lenguaje: 'JS',
@@ -58,7 +65,7 @@ export const MAS_PROYECTOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/cJtnkH9d/ja54312-github-io-MOBILE-FIRST-i-Phone-SE.png',
+    img: batatabit,
     altImg: 'Captura de la página Batatabit',
     titulo: 'BATATABIT',
     lenguaje: 'HTML-CSS',

@@ -24,7 +24,8 @@ export default function Card({ proyecto, prioridad = false }: CardProps) {
           src={img}
           alt={altImg}
           fill
-          sizes="(max-width: 767px) 90vw, (max-width: 905px) 45vw, 30vw"
+          /* La tarjeta mide 16rem (256px) fijos en todos los tamanos. */
+          sizes="256px"
           className={styles.imagen}
           priority={prioridad}
         />
