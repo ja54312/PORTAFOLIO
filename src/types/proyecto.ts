@@ -1,3 +1,5 @@
+import type { StaticImageData } from 'next/image'
+
 /**
  * Lenguajes/tecnologias que puede mostrar un <Badge/>.
  * Cada valor tiene una clase de color asociada en `elements/badge.module.css`.
@@ -14,9 +16,14 @@ export const LENGUAJES = [
 
 export type Lenguaje = (typeof LENGUAJES)[number]
 
+
 export interface Proyecto {
-  /** URL de la captura del proyecto. */
-  readonly img: string
+  /**
+   * Captura del proyecto, importada desde `src/assets/capturas`.
+   * El import estatico aporta ancho y alto, evita el salto de layout y
+   * ahorra al optimizador tener que descargar de un host externo.
+   */
+  readonly img: StaticImageData
   /** Texto alternativo de la captura. */
   readonly altImg: string
   readonly titulo: string

@@ -54,6 +54,7 @@ src/
 ├── lib/                  # utilidades (cx, edad)
 ├── types/                # tipos compartidos (Proyecto, Lenguaje)
 └── assets/               # imágenes importadas por next/image
+    └── capturas/         # capturas de los proyectos (WebP, 800px)
 public/iconos/            # SVG servidos por ruta (redes e intereses)
 ```
 
@@ -66,7 +67,7 @@ restringido a los valores que tienen color de badge definido.
 
 ```ts
 {
-  img: 'https://i.postimg.cc/.../captura.png',
+  img: miCaptura,               // import desde @/assets/capturas
   altImg: 'Captura de …',
   titulo: 'MI PROYECTO',
   lenguaje: 'NEXT-JS',         // JS | REACT | NEXT-JS | HTML-CSS
@@ -77,9 +78,19 @@ restringido a los valores que tienen color de badge definido.
 }
 ```
 
-Las capturas se sirven desde `i.postimg.cc`, dominio autorizado en
-`next.config.ts` (`images.remotePatterns`). Para usar otro host hay que
-añadirlo ahí.
+Las capturas viven en `src/assets/capturas/` y se importan de forma estática:
+
+```ts
+import miCaptura from '@/assets/capturas/mi-captura.webp'
+```
+
+Conviene generarlas a **800 px de ancho en WebP** (calidad 80): las tarjetas
+las muestran en una caja de 256×150 px, así que más resolución no aporta nada.
+Las 11 actuales ocupan 151 KB en total.
+
+> No uses URLs remotas. Antes venían de `i.postimg.cc` y el optimizador tenía
+> que descargarlas en cada arranque en frío, lo que agotaba el timeout del
+> compute de Amplify y devolvía **408** al navegador. Ver [DESPLIEGUE.md](DESPLIEGUE.md).
 
 ## Despliegue en AWS Amplify
 

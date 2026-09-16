@@ -16,15 +16,12 @@ const nextConfig: NextConfig = {
    * Sin ese ultimo paso el deploy falla con "Can't find required-server-files.json".
    */
 
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i.postimg.cc',
-        pathname: '/**',
-      },
-    ],
-  },
+  /*
+   * No hay `images.remotePatterns`: las capturas viven en `src/assets/capturas`
+   * y se importan estaticamente. Antes venian de i.postimg.cc y el optimizador
+   * tenia que descargarlas en cada arranque en frio, lo que agotaba el timeout
+   * del compute de Amplify y devolvia 408 al navegador.
+   */
 }
 
 export default nextConfig

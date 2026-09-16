@@ -143,6 +143,25 @@ Por eso `typecheck` es `next typegen && tsc --noEmit`, y no un `tsc` a secas.
 > Para reproducir el entorno de Amplify: clonar el repo en otro directorio y
 > ejecutar el pipeline ahí. `npm ci` a solas **no** es suficiente.
 
+### `408 Request Timeout` en `/_next/image` (imágenes rotas)
+
+Las capturas de las tarjetas venían de `i.postimg.cc`. En cada arranque en frío
+el optimizador tenía que **descargarlas del host externo** antes de convertirlas,
+y con 11 imágenes pidiéndose a la vez varias superaban el timeout del compute
+(~10 s) y devolvían `408` o `500`. El navegador mostraba el icono de imagen rota.
+
+Engañaba al diagnosticar: una vez calientes y cacheadas en CloudFront respondían
+en menos de un segundo, así que desde fuera parecía que todo iba bien. Los
+tiempos tampoco correlacionaban con el peso del original — una captura de 42 KB
+tardaba 6,6 s y otra de 1,1 MB un segundo —, lo que confirmaba que el problema
+era el arranque en frío y la concurrencia, no el tamaño.
+
+**Solución:** las capturas se trajeron al repositorio (`src/assets/capturas`,
+WebP a 800 px, 3,9 MB → 151 KB) y se importan estáticamente. El optimizador ya no
+sale a la red y `images.remotePatterns` desapareció de `next.config.ts`.
+
+**Regla:** no volver a poner imágenes remotas en las tarjetas.
+
 ---
 
 ## Comprobaciones útiles

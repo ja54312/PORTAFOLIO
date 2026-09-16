@@ -1,9 +1,13 @@
+import airbnbClone from '@/assets/capturas/airbnb-clone.webp'
+import appNotes from '@/assets/capturas/app-notes.webp'
+import eternology from '@/assets/capturas/eternology.webp'
+import tmhLogistica from '@/assets/capturas/tmh-logistica.webp'
 import type { Proyecto } from '@/types/proyecto'
 
 /** Proyectos que se muestran en el carrusel principal. */
 export const PROYECTOS_DESTACADOS: readonly Proyecto[] = [
   {
-    img: 'https://i.postimg.cc/0yxTZ71J/Airbnb-Clone-png.png',
+    img: airbnbClone,
     altImg: 'Captura del clon de Airbnb',
     titulo: 'Airbnb Clone',
     lenguaje: 'NEXT-JS',
@@ -13,7 +17,7 @@ export const PROYECTOS_DESTACADOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/R000FLdQ/www-tmhlogistica-com.png',
+    img: tmhLogistica,
     altImg: 'Captura de la web de TMH Logística',
     titulo: 'TMH LOGISTICA',
     lenguaje: 'NEXT-JS',
@@ -23,7 +27,7 @@ export const PROYECTOS_DESTACADOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/Gpst8hzQ/Eternology.png',
+    img: eternology,
     altImg: 'Captura de la web de Eternology',
     titulo: 'ETERNOLOGY',
     lenguaje: 'WORDPRESS',
@@ -33,7 +37,7 @@ export const PROYECTOS_DESTACADOS: readonly Proyecto[] = [
     textoBoton: 'Ir a la web',
   },
   {
-    img: 'https://i.postimg.cc/28P6g71J/APP-NOTES.png',
+    img: appNotes,
     altImg: 'Captura de la aplicación App Notes',
     titulo: 'APP NOTES',
     lenguaje: 'REACT',
