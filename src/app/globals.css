@@ -1,9 +1,31 @@
 :root {
-  --color-header: #212529;
-  --color-texto-navbar: #f3f8fb;
-  --color-footer: #212529;
-  --color-texto-footer: #f3f8fb;
-  --color-fondo: #f3f2ef;
+  color-scheme: dark;
+
+  /* Superficies, de la mas profunda a la mas elevada. */
+  --color-fondo: #0a0b0f;
+  --color-superficie: #111319;
+  --color-superficie-alta: #171a22;
+  --color-borde: #232733;
+  --color-borde-fuerte: #343a4a;
+
+  /* Texto. */
+  --color-texto: #e8eaf0;
+  --color-texto-suave: #9aa1b2;
+  --color-texto-tenue: #6b7285;
+
+  /* Un solo acento; el violeta solo aparece en degradados y brillos. */
+  --color-acento: #4f8cff;
+  --color-acento-hover: #78a6ff;
+  --color-acento-suave: rgb(79 140 255 / 12%);
+  --color-violeta: #8b5cf6;
+
+  --radio: 0.75rem;
+  --radio-sm: 0.5rem;
+  --ancho-max: 72rem;
+  --alto-header: 4rem;
+
+  --fuente-sans: var(--fuente-geist), system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fuente-mono: var(--fuente-geist-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
 }
 
 *,
@@ -19,22 +41,52 @@
 
 html {
   scroll-behavior: smooth;
+  /* Los anclajes no quedan ocultos tras el header fijo. */
+  scroll-padding-top: calc(var(--alto-header) + 1rem);
 }
 
 body {
   min-height: 100dvh;
-  font-family: var(--fuente-roboto), system-ui, -apple-system, "Segoe UI", sans-serif;
-  color: #212529;
+  font-family: var(--fuente-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-texto);
   background-color: var(--color-fondo);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 img,
 svg {
+  display: block;
   max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--color-acento);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-acento);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

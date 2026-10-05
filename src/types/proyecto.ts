@@ -8,6 +8,8 @@ export const LENGUAJES = [
   'JS',
   'REACT',
   'NEXT-JS',
+  'NESTJS',
+  'AWS',
   'HTML-CSS',
   'Bootstrap',
   'WORDPRESS',

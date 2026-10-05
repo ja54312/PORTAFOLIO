@@ -1,49 +1,60 @@
-import airbnbClone from '@/assets/capturas/airbnb-clone.webp'
-import appNotes from '@/assets/capturas/app-notes.webp'
+import arcaneStudio from '@/assets/capturas/arcane-studio.webp'
 import eternology from '@/assets/capturas/eternology.webp'
+import institutoSapereAude from '@/assets/capturas/instituto-sapere-aude.webp'
+import losCabosWeddings from '@/assets/capturas/los-cabos-weddings.webp'
 import tmhLogistica from '@/assets/capturas/tmh-logistica.webp'
 import type { Proyecto } from '@/types/proyecto'
 
 /** Proyectos que se muestran en el carrusel principal. */
 export const PROYECTOS_DESTACADOS: readonly Proyecto[] = [
   {
-    img: airbnbClone,
-    altImg: 'Captura del clon de Airbnb',
-    titulo: 'Airbnb Clone',
-    lenguaje: 'NEXT-JS',
+    img: institutoSapereAude,
+    altImg: 'Captura de la web del Instituto Sapere Aude',
+    titulo: 'Instituto Sapere Aude',
+    lenguaje: 'NESTJS',
     descripcion:
-      'Un clon funcional de Airbnb, hecho en Next.js con TypeScript, MongoDB y Prisma.',
-    link: 'https://cloneairbnb-eta.vercel.app/',
-    textoBoton: 'Ir a la web',
+      'Sistema escolar con 6 roles en NestJS, GraphQL, Prisma y Next.js 16, desplegado on-premise con Cloudflare Tunnel y CI.',
+    link: 'https://www.institutosapereaude.com',
+    textoBoton: 'Visitar sitio',
   },
   {
     img: tmhLogistica,
     altImg: 'Captura de la web de TMH Logística',
-    titulo: 'TMH LOGISTICA',
+    titulo: 'TMH Logística',
     lenguaje: 'NEXT-JS',
     descripcion:
-      'Landing page para una empresa de logística, hecha en Next.js con TypeScript.',
+      'Sitio en Next.js con cotizador y módulo de facturación CFDI 4.0 con timbrado ante el SAT para su plataforma.',
     link: 'https://www.tmhlogistica.com/',
-    textoBoton: 'Ir a la web',
+    textoBoton: 'Visitar sitio',
+  },
+  {
+    img: losCabosWeddings,
+    altImg: 'Captura de la web de Los Cabos Weddings',
+    titulo: 'Los Cabos Weddings',
+    lenguaje: 'NEXT-JS',
+    descripcion:
+      'Directorio bilingüe de proveedores de bodas en Next.js con TypeScript, next-intl y SEO técnico.',
+    link: 'https://www.loscabosweddings.com',
+    textoBoton: 'Visitar sitio',
+  },
+  {
+    img: arcaneStudio,
+    altImg: 'Captura de la web de Arcane Studio',
+    titulo: 'Arcane Studio',
+    lenguaje: 'AWS',
+    descripcion:
+      'Web de agencia en Next.js bilingüe con GitLab CI (SAST) y despliegue en AWS Amplify.',
+    link: 'https://www.arcanestudioagency.com',
+    textoBoton: 'Visitar sitio',
   },
   {
     img: eternology,
     altImg: 'Captura de la web de Eternology',
-    titulo: 'ETERNOLOGY',
+    titulo: 'Eternology',
     lenguaje: 'WORDPRESS',
     descripcion:
-      'Creación de la página para un negocio de bebidas, en WordPress con código personalizado.',
+      'Sitio para una marca de bebidas en WordPress con páginas a medida, GTM y WhatsApp.',
     link: 'https://eternology.com.mx/',
-    textoBoton: 'Ir a la web',
-  },
-  {
-    img: appNotes,
-    altImg: 'Captura de la aplicación App Notes',
-    titulo: 'APP NOTES',
-    lenguaje: 'REACT',
-    descripcion:
-      'App To-Do creada en React con el uso de useState y useEffect, guardando tus tareas en el localStorage.',
-    link: 'https://ja54312.github.io/APP_NOTES/',
-    textoBoton: 'Ir a la web',
+    textoBoton: 'Visitar sitio',
   },
 ]

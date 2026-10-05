@@ -1,0 +1,142 @@
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+/* Periodo a la izquierda y tarjeta a la derecha, unidos por la linea de tiempo. */
+.puesto {
+  position: relative;
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 2rem;
+}
+
+.puesto::before {
+  position: absolute;
+  top: 0.4rem;
+  bottom: -1.25rem;
+  left: 12rem;
+  width: 1px;
+  content: '';
+  background: linear-gradient(var(--color-borde-fuerte), var(--color-borde) 80%);
+}
+
+.puesto:last-child::before {
+  bottom: 0;
+}
+
+.puesto::after {
+  position: absolute;
+  top: 0.4rem;
+  left: calc(12rem - 0.3rem);
+  width: 0.6rem;
+  height: 0.6rem;
+  content: '';
+  background-color: var(--color-fondo);
+  border: 2px solid var(--color-texto-tenue);
+  border-radius: 50%;
+}
+
+.puesto:first-child::after {
+  background-color: var(--color-acento);
+  border-color: var(--color-acento);
+  box-shadow: 0 0 0 4px var(--color-acento-suave);
+}
+
+.periodo {
+  padding-top: 0.1rem;
+  font-family: var(--fuente-mono);
+  font-size: 0.85rem;
+  color: var(--color-texto-tenue);
+  text-align: right;
+}
+
+.tarjeta {
+  padding: 1.5rem;
+  margin-left: 1rem;
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+}
+
+.empresa {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.rol {
+  margin-top: 0.15rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-acento);
+}
+
+.logros {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--color-texto-suave);
+  list-style: none;
+}
+
+.logros li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.logros li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fuente-mono);
+  color: var(--color-texto-tenue);
+  content: '›';
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+  list-style: none;
+}
+
+.stack li {
+  padding: 0.2rem 0.55rem;
+  font-family: var(--fuente-mono);
+  font-size: 0.75rem;
+  color: var(--color-acento-hover);
+  background-color: var(--color-acento-suave);
+  border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+  .puesto {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .puesto::before {
+    left: 0.3rem;
+  }
+
+  .puesto::after {
+    left: 0;
+  }
+
+  .periodo {
+    text-align: left;
+  }
+
+  .tarjeta {
+    padding: 1.25rem;
+    margin-left: 0;
+  }
+}

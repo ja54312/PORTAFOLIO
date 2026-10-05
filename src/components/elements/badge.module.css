@@ -1,43 +1,63 @@
 .badge {
-  display: inline-block;
-  padding: 0.35em 0.65em;
-  font-size: 0.75em;
-  font-weight: 700;
+  --color-badge: var(--color-texto-suave);
+
+  display: inline-flex;
+  gap: 0.45em;
+  align-items: center;
+  padding: 0.3em 0.65em;
+  font-family: var(--fuente-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
   line-height: 1;
-  color: #fff;
-  text-align: center;
+  color: var(--color-texto);
+  letter-spacing: 0.02em;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  background-color: var(--color-superficie-alta);
+  border: 1px solid var(--color-borde);
+  border-radius: 999px;
+}
+
+.badge::before {
+  width: 0.5em;
+  height: 0.5em;
+  content: '';
+  background-color: var(--color-badge);
+  border-radius: 50%;
 }
 
 /* Un color por lenguaje. Las claves coinciden con el tipo `Lenguaje`. */
 .JS {
-  background-color: #ffc107;
-  color: #212529;
+  --color-badge: #f7df1e;
 }
 
 .REACT {
-  background-color: #198754;
+  --color-badge: #61dafb;
 }
 
 .HTML-CSS {
-  background-color: #6c757d;
+  --color-badge: #e34f26;
 }
 
 .Bootstrap {
-  background-color: #0dcaf0;
-  color: #212529;
+  --color-badge: #8b5cf6;
 }
 
 .NEXT-JS {
-  background-color: #0f6cca;
+  --color-badge: #e8eaf0;
+}
+
+.NESTJS {
+  --color-badge: #e0234e;
+}
+
+.AWS {
+  --color-badge: #ff9900;
 }
 
 .WORDPRESS {
-  background-color: #043174;
+  --color-badge: #3d8fd1;
 }
 
 .CLONE {
-  background-color: #212529;
+  --color-badge: #6b7285;
 }
