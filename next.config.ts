@@ -3,6 +3,9 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
+  // Evita que `next dev` genere AGENTS.md y CLAUDE.md en la raiz del repo.
+  agentRules: false,
+
   /*
    * No se define `output`: Amplify Hosting despliega este proyecto en modo SSR
    * (plataforma WEB_COMPUTE), que es la que detecta al conectar un repo con
