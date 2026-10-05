@@ -4,23 +4,39 @@ import logo from '@/assets/trifuerza.png'
 import { PERFIL } from '@/data/perfil'
 import styles from './header.module.css'
 
+const ENLACES = [
+  { href: '#experiencia', texto: 'Experiencia' },
+  { href: '#proyectos', texto: 'Proyectos' },
+  { href: '#sobre-mi', texto: 'Sobre mí' },
+] as const
+
 export default function Header() {
   return (
-    <header id="header" className={styles.header}>
+    <header id="inicio" className={styles.header}>
       <nav className={styles.navbar} aria-label="Principal">
-        <div className={styles.contenedor}>
-          <a className={styles.marca} href="#header">
-            <Image
-              src={logo}
-              alt={`Logotipo de ${PERFIL.alias}`}
-              width={70}
-              height={70}
-              className={styles.logo}
-              priority
-            />
-            <span className={styles.nombre}>{PERFIL.alias}</span>
-          </a>
-        </div>
+        <a className={styles.marca} href="#inicio">
+          <Image
+            src={logo}
+            alt=""
+            width={28}
+            height={28}
+            className={styles.logo}
+            priority
+          />
+          <span className={styles.nombre}>{PERFIL.alias}</span>
+        </a>
+        <ul className={styles.enlaces}>
+          {ENLACES.map((enlace) => (
+            <li key={enlace.href}>
+              <a className={styles.enlace} href={enlace.href}>
+                {enlace.texto}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a className={styles.contacto} href="#contacto">
+          Contacto
+        </a>
       </nav>
     </header>
   )

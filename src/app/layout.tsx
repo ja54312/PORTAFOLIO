@@ -1,27 +1,32 @@
 import type { Metadata, Viewport } from 'next'
-import { Roboto } from 'next/font/google'
+import { Geist, Geist_Mono } from 'next/font/google'
 
 import { PERFIL } from '@/data/perfil'
 import './globals.css'
 
 /*
- * `next/font` descarga y auto-hospeda la tipografia en build: elimina la peticion
- * de bloqueo a fonts.googleapis.com que tenia el index.html original. Ademas se
- * cargan los pesos que el CSS realmente usa (400/500/700); antes solo se pedia
- * la variante italic 300 y el navegador sintetizaba el resto.
+ * `next/font` descarga y auto-hospeda las tipografias en build, sin peticiones
+ * de bloqueo a fonts.googleapis.com. Geist para el texto y Geist Mono para los
+ * detalles tecnicos (etiquetas, fechas, numeracion de secciones).
  */
-const roboto = Roboto({
+const geist = Geist({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
   display: 'swap',
-  variable: '--fuente-roboto',
+  variable: '--fuente-geist',
 })
 
-const DESCRIPCION =
-  'Soy José Antonio Alatorre Chávez, desarrollador Full Stack con mayor dominio de Front-End. Este es mi portafolio de trabajos. Trabajemos juntos =)'
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--fuente-geist-mono',
+})
+
+const DESCRIPCION = `Soy ${PERFIL.nombre}, ${PERFIL.titulo} con ${PERFIL.aniosExperiencia} años de experiencia en Next.js, NestJS, GraphQL, AWS y GCP. Conoce mi experiencia y mis proyectos.`
+
+const TITULO = `${PERFIL.alias} | ${PERFIL.titulo}`
 
 export const metadata: Metadata = {
-  title: `${PERFIL.alias} | Full Stack Developer`,
+  title: TITULO,
   description: DESCRIPCION,
   authors: [{ name: PERFIL.nombre, url: PERFIL.redes.github }],
   creator: PERFIL.nombre,
@@ -29,13 +34,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_MX',
-    title: `${PERFIL.alias} | Full Stack Developer`,
+    title: TITULO,
     description: DESCRIPCION,
     siteName: PERFIL.alias,
   },
   twitter: {
     card: 'summary',
-    title: `${PERFIL.alias} | Full Stack Developer`,
+    title: TITULO,
     description: DESCRIPCION,
     creator: '@JA54312',
   },
@@ -44,12 +49,12 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#212529',
+  themeColor: '#0a0b0f',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={roboto.variable}>
+    <html lang="es" className={`${geist.variable} ${geistMono.variable}`}>
       <body>{children}</body>
     </html>
   )

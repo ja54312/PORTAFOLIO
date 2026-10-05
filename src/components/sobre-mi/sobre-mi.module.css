@@ -1,35 +1,70 @@
-.seccion {
-  padding-bottom: 1rem;
+.contenido {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
 }
 
 .texto {
-  padding-left: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  font-size: 1.05rem;
+  color: var(--color-texto-suave);
 }
 
-.intereses {
+.texto strong {
+  font-weight: 600;
+  color: var(--color-texto);
+}
+
+.stack {
+  overflow: hidden;
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+}
+
+.grupo {
+  padding: 1rem 1.25rem;
+}
+
+.grupo + .grupo {
+  border-top: 1px solid var(--color-borde);
+}
+
+.area {
+  margin-bottom: 0.6rem;
+  font-family: var(--fuente-mono);
+  font-size: 0.75rem;
+  color: var(--color-texto-tenue);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tecnologias {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 1rem 0 1rem 3rem;
-  margin: 0;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   list-style: none;
 }
 
-.interes {
-  padding-left: 0.25rem;
+.tecnologias li {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  color: var(--color-texto);
+  background-color: var(--color-superficie-alta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-sm);
 }
 
-.icono {
-  width: 50px;
-  height: 50px;
-}
+@media (max-width: 900px) {
+  .contenido {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-@media screen and (max-width: 767px) {
   .texto {
-    padding-right: 1rem;
     font-size: 1rem;
   }
 }

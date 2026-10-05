@@ -6,7 +6,7 @@ interface BadgeProps {
   lenguaje: Lenguaje
 }
 
-/** Etiqueta de color con la tecnologia principal de un proyecto. */
+/** Etiqueta con la tecnologia principal de un proyecto; el punto lleva su color. */
 export default function Badge({ lenguaje }: BadgeProps) {
   return <span className={cx(styles.badge, styles[lenguaje])}>{lenguaje}</span>
 }
